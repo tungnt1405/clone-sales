@@ -17,5 +17,5 @@ composer.lock*
 package-lock.json*
 yarn.lock*
 mix-manifest.json*
-/css/app.css
-/js/app.js
+/public/css/app.css
+/public/js/app.js

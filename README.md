@@ -22,3 +22,4 @@ to install vendor
 - PHP 7.4
 - jQuery
 - boostrap
+- NProgress

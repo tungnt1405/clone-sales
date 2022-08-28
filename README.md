@@ -11,7 +11,7 @@ to install vendor
 
 ## Run Application
 - setting file .env(info database)
-- run `npm run dev` || `yarn dev|
+- run `npm run dev` || `yarn dev`
 - run `npm run watch` || `yarn watch`
 - run `php artisan serve`
 

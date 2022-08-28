@@ -16,7 +16,7 @@ to install vendor
 - run `php artisan serve`
 
 ## technology use:
-- Vue JS
+- Vue JS 2
 - Vue router
 - Laravel 8
 - PHP 7.4

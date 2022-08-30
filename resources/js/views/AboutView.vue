@@ -1,7 +1,5 @@
 <template>
-    <div class="emb-aboutus-wrap">
-        <About></About>
-    </div>
+    <About></About>
 </template>
 
 <script>

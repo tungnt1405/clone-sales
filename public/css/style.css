@@ -9,7 +9,12 @@
 .main{
     min-height: 50%;
 }
-
+.page-title-bar{
+    background-image: url(../images/data/bg-about.jpg) !important;
+}
+.testimonail-v2{
+    background-image: url(../images/data/about-bg.jpg) !important;
+}
 .footer{
     position: relative;
     z-index: 10;

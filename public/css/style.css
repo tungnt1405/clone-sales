@@ -2,10 +2,36 @@
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
+.main{
+    min-height: 50%;
+}
+
+.footer{
+    position: relative;
+    z-index: 10;
+    padding-top: 54px;
+    background-color: #000;
+}
+.section-gap{
+    padding: 5rem 0;
+}
 .primary{
     background-color: #283593 !important;
     border-color: #283593 !important;
+}
+.footer li a{
+    color: #fff;
+    line-height: 27px;
+    font-size: .875rem
+}
+.footer li a:hover{
+    color: #ff5722;
+}
+.footer hr{
+    border: 1px solid hsla(0,0%,100%,.2);
+    margin: 3rem 0;
 }

@@ -1,5 +1,7 @@
 <template>
-    <BasicComponent></BasicComponent>
+    <v-container>
+        <BasicComponent></BasicComponent>
+    </v-container>
 </template>
 
 <script>

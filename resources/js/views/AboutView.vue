@@ -1,10 +1,14 @@
 <template>
-    <div><h1>About View</h1></div>
+    <div class="emb-aboutus-wrap">
+        <About></About>
+    </div>
 </template>
 
 <script>
+import About from "../components/about/index.vue";
 export default {
     name: "AboutView",
+    components: { About },
 };
 </script>
 

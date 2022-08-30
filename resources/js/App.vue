@@ -14,6 +14,9 @@
             </div>
         </div>
         <router-view />
+        <div class="footer section-gap">
+            <FooterComponent></FooterComponent>
+        </div>
     </v-app>
 </template>
 
@@ -21,9 +24,10 @@
 import systemcf from "./mixins/systemcf";
 import SideBarComponent from "./components/layouts/SideBarComponent.vue";
 import MenuComponent from "./components/layouts/MenuComponent.vue";
+import FooterComponent from "./components/layouts/FooterComponent.vue";
 export default {
     mixins: [systemcf],
-    components: { SideBarComponent, MenuComponent },
+    components: { SideBarComponent, MenuComponent, FooterComponent },
 };
 </script>
 

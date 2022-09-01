@@ -34,12 +34,19 @@
                                 voluptatibus aperiam porro a quo, obcaecati
                                 dolor distinctio provident iusto libero ducimus?
                             </p>
-                            <button
+                            <!-- <button
                                 type="button"
                                 class="accent mx-0 v-btn v-btn--contained theme--light v-size--large"
                             >
                                 <span class="v-btn__content">Read More</span>
-                            </button>
+                            </button> -->
+                            <v-btn
+                                class="mx-0 white--text text-small"
+                                color="#ff5722"
+                                large
+                                depressed
+                                >Read More</v-btn
+                            >
                         </div>
                         <div
                             class="flex xs12 md12 lg6 xl6 text-lg-left text-center"
@@ -49,7 +56,7 @@
                                 lazy-src="/images/data/about-us.jpg"
                                 src="/images/data/about-us.jpg"
                                 width="700"
-                                height="700"
+                                height="800"
                             ></v-img>
                         </div>
                     </div>
@@ -472,4 +479,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.v-btn {
+    text-transform: capitalize !important;
+}
+</style>

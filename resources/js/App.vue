@@ -31,4 +31,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.v-application .accent {
+    background-color: #ff5722 !important;
+    border-color: #ff5722 !important;
+}
+</style>

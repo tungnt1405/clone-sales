@@ -124,313 +124,231 @@
                 <div class="container grid-list-xl py-0">
                     <div class="layout row wrap align-center justify-center">
                         <div class="flex xl6 sm12 md8 lg6">
-                            <div class="slick-initialized slick-slider">
-                                <div class="slick-list draggable">
-                                    <div
-                                        class="slick-track"
-                                        style="
-                                            opacity: 1;
-                                            width: 2780px;
-                                            transform: translate3d(
-                                                0px,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <div
-                                            class="slick-slide slick-current slick-active"
-                                            data-slick-index="0"
-                                            aria-hidden="false"
-                                            style="width: 695px"
-                                        >
-                                            <div>
+                            <div class="slider">
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div class="sec-title">
+                                                <h2 class="white--text">
+                                                    Albert Gomez
+                                                </h2>
+                                            </div>
+                                            <div
+                                                class="testi-card-v2 mb-6 text-center"
+                                            >
                                                 <div
-                                                    class="slide-item px-4"
-                                                    style="
-                                                        width: 100%;
-                                                        display: inline-block;
-                                                    "
+                                                    class="layout row wrap align-center justify-center"
                                                 >
-                                                    <div class="sec-title">
-                                                        <h2 class="white--text">
-                                                            Albert Gomez
-                                                        </h2>
-                                                    </div>
                                                     <div
-                                                        class="testi-card-v2 mb-6 text-center"
+                                                        class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
                                                     >
-                                                        <div
-                                                            class="layout row wrap align-center justify-center"
-                                                        >
-                                                            <div
-                                                                class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
-                                                            >
-                                                                <img
-                                                                    src="/images/data/user-1.jpg"
-                                                                    width="200"
-                                                                    height="200"
-                                                                    alt="team-image"
-                                                                    class="br-100 text-center mx-auto"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="testi-content text-center"
-                                                    >
-                                                        <h4
-                                                            class="font-weight-medium mb-0 white--text"
-                                                        >
-                                                            Albert Gomez
-                                                        </h4>
-                                                        <p
-                                                            class="text-inverse white--text"
-                                                        >
-                                                            Head, ABS Infos
-                                                        </p>
-                                                        <p
-                                                            class="text-inverse testi-content white--text"
-                                                        >
-                                                            Lorem ipsum dolor
-                                                            sit amet
-                                                            consectetur,
-                                                            adipisicing elit.
-                                                            Autexpedita quasi
-                                                            voluptatibus tenetur
-                                                            nisi ad earum atque
-                                                            laboriosam
-                                                            accusamus.
-                                                            Doloremque sapiente
-                                                            aliquid quae. Animi
-                                                            ratione dolorum
-                                                            repellat amet nihil?
-                                                            Magnam?
-                                                        </p>
+                                                        <img
+                                                            src="/images/data/user-1.jpg"
+                                                            width="200"
+                                                            height="200"
+                                                            alt="team-image"
+                                                            class="br-100 text-center mx-auto"
+                                                        />
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="slick-slide"
-                                            data-slick-index="1"
-                                            aria-hidden="true"
-                                            style="width: 695px"
-                                            tabindex="-1"
-                                        >
-                                            <div>
-                                                <div
-                                                    class="slide-item px-4"
-                                                    style="
-                                                        width: 100%;
-                                                        display: inline-block;
-                                                    "
+                                            <div
+                                                class="testi-content text-center"
+                                            >
+                                                <h4
+                                                    class="font-weight-medium mb-0 white--text"
                                                 >
-                                                    <div class="sec-title">
-                                                        <h2 class="white--text">
-                                                            Tristan Cyrus
-                                                        </h2>
-                                                    </div>
+                                                    Albert Gomez
+                                                </h4>
+                                                <p
+                                                    class="text-inverse white--text"
+                                                >
+                                                    Head, ABS Infos
+                                                </p>
+                                                <p
+                                                    class="text-inverse testi-content white--text"
+                                                >
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur, adipisicing
+                                                    elit. Autexpedita quasi
+                                                    voluptatibus tenetur nisi ad
+                                                    earum atque laboriosam
+                                                    accusamus. Doloremque
+                                                    sapiente aliquid quae. Animi
+                                                    ratione dolorum repellat
+                                                    amet nihil? Magnam?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div class="sec-title">
+                                                <h2 class="white--text">
+                                                    Tristan Cyrus
+                                                </h2>
+                                            </div>
+                                            <div
+                                                class="testi-card-v2 mb-6 text-center"
+                                            >
+                                                <div
+                                                    class="layout row wrap align-center justify-center"
+                                                >
                                                     <div
-                                                        class="testi-card-v2 mb-6 text-center"
+                                                        class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
                                                     >
-                                                        <div
-                                                            class="layout row wrap align-center justify-center"
-                                                        >
-                                                            <div
-                                                                class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
-                                                            >
-                                                                <img
-                                                                    src="/images/data/user-2.jpg"
-                                                                    width="200"
-                                                                    height="200"
-                                                                    alt="team-image"
-                                                                    class="br-100 text-center mx-auto"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="testi-content text-center"
-                                                    >
-                                                        <h4
-                                                            class="font-weight-medium mb-0 white--text"
-                                                        >
-                                                            Tristan Cyrus
-                                                        </h4>
-                                                        <p
-                                                            class="text-inverse white--text"
-                                                        >
-                                                            Head, ABS Infos
-                                                        </p>
-                                                        <p
-                                                            class="text-inverse testi-content white--text"
-                                                        >
-                                                            Lorem ipsum dolor
-                                                            sit amet
-                                                            consectetur,
-                                                            adipisicing elit.
-                                                            Autexpedita quasi
-                                                            voluptatibus tenetur
-                                                            nisi ad earum atque
-                                                            laboriosam
-                                                            accusamus.
-                                                            Doloremque sapiente
-                                                            aliquid quae. Animi
-                                                            ratione dolorum
-                                                            repellat amet nihil?
-                                                            Magnam?
-                                                        </p>
+                                                        <img
+                                                            src="/images/data/user-2.jpg"
+                                                            width="200"
+                                                            height="200"
+                                                            alt="team-image"
+                                                            class="br-100 text-center mx-auto"
+                                                        />
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="slick-slide"
-                                            data-slick-index="2"
-                                            aria-hidden="true"
-                                            style="width: 695px"
-                                            tabindex="-1"
-                                        >
-                                            <div>
-                                                <div
-                                                    class="slide-item px-4"
-                                                    style="
-                                                        width: 100%;
-                                                        display: inline-block;
-                                                    "
+                                            <div
+                                                class="testi-content text-center"
+                                            >
+                                                <h4
+                                                    class="font-weight-medium mb-0 white--text"
                                                 >
-                                                    <div class="sec-title">
-                                                        <h2 class="white--text">
-                                                            Kendrick Younes
-                                                        </h2>
-                                                    </div>
+                                                    Tristan Cyrus
+                                                </h4>
+                                                <p
+                                                    class="text-inverse white--text"
+                                                >
+                                                    Head, ABS Infos
+                                                </p>
+                                                <p
+                                                    class="text-inverse testi-content white--text"
+                                                >
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur, adipisicing
+                                                    elit. Autexpedita quasi
+                                                    voluptatibus tenetur nisi ad
+                                                    earum atque laboriosam
+                                                    accusamus. Doloremque
+                                                    sapiente aliquid quae. Animi
+                                                    ratione dolorum repellat
+                                                    amet nihil? Magnam?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div class="sec-title">
+                                                <h2 class="white--text">
+                                                    Kendrick Younes
+                                                </h2>
+                                            </div>
+                                            <div
+                                                class="testi-card-v2 mb-6 text-center"
+                                            >
+                                                <div
+                                                    class="layout row wrap align-center justify-center"
+                                                >
                                                     <div
-                                                        class="testi-card-v2 mb-6 text-center"
+                                                        class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
                                                     >
-                                                        <div
-                                                            class="layout row wrap align-center justify-center"
-                                                        >
-                                                            <div
-                                                                class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
-                                                            >
-                                                                <img
-                                                                    src="/images/data/user-3.jpg"
-                                                                    width="200"
-                                                                    height="200"
-                                                                    alt="team-image"
-                                                                    class="br-100 text-center mx-auto"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="testi-content text-center"
-                                                    >
-                                                        <h4
-                                                            class="font-weight-medium mb-0 white--text"
-                                                        >
-                                                            Kendrick Younes
-                                                        </h4>
-                                                        <p
-                                                            class="text-inverse white--text"
-                                                        >
-                                                            Head, ABS Infos
-                                                        </p>
-                                                        <p
-                                                            class="text-inverse testi-content white--text"
-                                                        >
-                                                            Lorem ipsum dolor
-                                                            sit amet
-                                                            consectetur,
-                                                            adipisicing elit.
-                                                            Autexpedita quasi
-                                                            voluptatibus tenetur
-                                                            nisi ad earum atque
-                                                            laboriosam
-                                                            accusamus.
-                                                            Doloremque sapiente
-                                                            aliquid quae. Animi
-                                                            ratione dolorum
-                                                            repellat amet nihil?
-                                                            Magnam?
-                                                        </p>
+                                                        <img
+                                                            src="/images/data/user-3.jpg"
+                                                            width="200"
+                                                            height="200"
+                                                            alt="team-image"
+                                                            class="br-100 text-center mx-auto"
+                                                        />
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="slick-slide"
-                                            data-slick-index="3"
-                                            aria-hidden="true"
-                                            style="width: 695px"
-                                            tabindex="-1"
-                                        >
-                                            <div>
-                                                <div
-                                                    class="slide-item px-4"
-                                                    style="
-                                                        width: 100%;
-                                                        display: inline-block;
-                                                    "
+                                            <div
+                                                class="testi-content text-center"
+                                            >
+                                                <h4
+                                                    class="font-weight-medium mb-0 white--text"
                                                 >
-                                                    <div class="sec-title">
-                                                        <h2 class="white--text">
-                                                            Beljium Hugh
-                                                        </h2>
-                                                    </div>
+                                                    Kendrick Younes
+                                                </h4>
+                                                <p
+                                                    class="text-inverse white--text"
+                                                >
+                                                    Head, ABS Infos
+                                                </p>
+                                                <p
+                                                    class="text-inverse testi-content white--text"
+                                                >
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur, adipisicing
+                                                    elit. Autexpedita quasi
+                                                    voluptatibus tenetur nisi ad
+                                                    earum atque laboriosam
+                                                    accusamus. Doloremque
+                                                    sapiente aliquid quae. Animi
+                                                    ratione dolorum repellat
+                                                    amet nihil? Magnam?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div class="sec-title">
+                                                <h2 class="white--text">
+                                                    Beljium Hugh
+                                                </h2>
+                                            </div>
+                                            <div
+                                                class="testi-card-v2 mb-6 text-center"
+                                            >
+                                                <div
+                                                    class="layout row wrap align-center justify-center"
+                                                >
                                                     <div
-                                                        class="testi-card-v2 mb-6 text-center"
+                                                        class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
                                                     >
-                                                        <div
-                                                            class="layout row wrap align-center justify-center"
-                                                        >
-                                                            <div
-                                                                class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
-                                                            >
-                                                                <img
-                                                                    src="/images/data/user-4.jpg"
-                                                                    width="200"
-                                                                    height="200"
-                                                                    alt="team-image"
-                                                                    class="br-100 text-center mx-auto"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="testi-content text-center"
-                                                    >
-                                                        <h4
-                                                            class="font-weight-medium mb-0 white--text"
-                                                        >
-                                                            Beljium Hugh
-                                                        </h4>
-                                                        <p
-                                                            class="text-inverse white--text"
-                                                        >
-                                                            Head, ABS Infos
-                                                        </p>
-                                                        <p
-                                                            class="text-inverse testi-content white--text"
-                                                        >
-                                                            Lorem ipsum dolor
-                                                            sit amet
-                                                            consectetur,
-                                                            adipisicing elit.
-                                                            Autexpedita quasi
-                                                            voluptatibus tenetur
-                                                            nisi ad earum atque
-                                                            laboriosam
-                                                            accusamus.
-                                                            Doloremque sapiente
-                                                            aliquid quae. Animi
-                                                            ratione dolorum
-                                                            repellat amet nihil?
-                                                            Magnam?
-                                                        </p>
+                                                        <img
+                                                            src="/images/data/user-4.jpg"
+                                                            width="200"
+                                                            height="200"
+                                                            alt="team-image"
+                                                            class="br-100 text-center mx-auto"
+                                                        />
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div
+                                                class="testi-content text-center"
+                                            >
+                                                <h4
+                                                    class="font-weight-medium mb-0 white--text"
+                                                >
+                                                    Beljium Hugh
+                                                </h4>
+                                                <p
+                                                    class="text-inverse white--text"
+                                                >
+                                                    Head, ABS Infos
+                                                </p>
+                                                <p
+                                                    class="text-inverse testi-content white--text"
+                                                >
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur, adipisicing
+                                                    elit. Autexpedita quasi
+                                                    voluptatibus tenetur nisi ad
+                                                    earum atque laboriosam
+                                                    accusamus. Doloremque
+                                                    sapiente aliquid quae. Animi
+                                                    ratione dolorum repellat
+                                                    amet nihil? Magnam?
+                                                </p>
                                             </div>
                                         </div>
                                     </div>

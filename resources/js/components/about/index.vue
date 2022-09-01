@@ -44,12 +44,13 @@
                         <div
                             class="flex xs12 md12 lg6 xl6 text-lg-left text-center"
                         >
-                            <img
+                            <v-img
                                 alt="About us Figure"
+                                lazy-src="/images/data/about-us.jpg"
                                 src="/images/data/about-us.jpg"
                                 width="700"
                                 height="700"
-                            />
+                            ></v-img>
                         </div>
                     </div>
                 </v-container>
@@ -60,12 +61,13 @@
                         <div
                             class="flex xl6 sm12 xs12 md6 lg6 text-md-left text-center"
                         >
-                            <img
+                            <v-img
+                                lazy-src="/images/data/our-mission.jpg"
                                 src="/images/data/our-mission.jpg"
                                 alt="mission"
-                                width="900"
-                                height="700"
-                            />
+                                width="569"
+                                height="442"
+                            ></v-img>
                         </div>
                         <div class="flex pl-12 xl6 xs12 md6 lg6">
                             <h2 class="font-weight-bold">Our Mission</h2>
@@ -90,12 +92,13 @@
                     </div>
                     <div class="layout row wrap align-center reverse">
                         <div class="flex xl6 xs12 md6 lg6">
-                            <img
+                            <v-img
+                                lazy-src="/images/data/our-vision.jpg"
                                 src="/images/data/our-vision.jpg"
                                 alt="vission"
-                                width="900"
-                                height="700"
-                            />
+                                width="569"
+                                height="442"
+                            ></v-img>
                         </div>
                         <div class="flex pr-12 xl6 xs12 md6 lg6">
                             <h2 class="font-bold">Our Vision</h2>
@@ -142,13 +145,21 @@
                                                     <div
                                                         class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
                                                     >
-                                                        <img
+                                                        <v-img
+                                                            lazy-src="/images/data/user-1.jpg"
                                                             src="/images/data/user-1.jpg"
                                                             width="200"
                                                             height="200"
                                                             alt="team-image"
                                                             class="br-100 text-center mx-auto"
-                                                        />
+                                                        ></v-img>
+                                                        <!-- <img
+                                                            src="/images/data/user-1.jpg"
+                                                            width="200"
+                                                            height="200"
+                                                            alt="team-image"
+                                                            class="br-100 text-center mx-auto"
+                                                        /> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -199,13 +210,14 @@
                                                     <div
                                                         class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
                                                     >
-                                                        <img
+                                                        <v-img
+                                                            lazy-src="/images/data/user-2.jpg"
                                                             src="/images/data/user-2.jpg"
                                                             width="200"
                                                             height="200"
                                                             alt="team-image"
                                                             class="br-100 text-center mx-auto"
-                                                        />
+                                                        ></v-img>
                                                     </div>
                                                 </div>
                                             </div>
@@ -256,13 +268,14 @@
                                                     <div
                                                         class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
                                                     >
-                                                        <img
+                                                        <v-img
+                                                            lazy-src="/images/data/user-3.jpg"
                                                             src="/images/data/user-3.jpg"
                                                             width="200"
                                                             height="200"
                                                             alt="team-image"
                                                             class="br-100 text-center mx-auto"
-                                                        />
+                                                        ></v-img>
                                                     </div>
                                                 </div>
                                             </div>
@@ -313,13 +326,14 @@
                                                     <div
                                                         class="flex xs5 sm4 md5 lg4 xl3 text-center user-img"
                                                     >
-                                                        <img
+                                                        <v-img
+                                                            lazy-src="/images/data/user-4.jpg"
                                                             src="/images/data/user-4.jpg"
                                                             width="200"
                                                             height="200"
                                                             alt="team-image"
                                                             class="br-100 text-center mx-auto"
-                                                        />
+                                                        ></v-img>
                                                     </div>
                                                 </div>
                                             </div>
@@ -357,6 +371,96 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div
+                class="team-section text-center section-gap blue-grey lighten-5"
+            >
+                <v-container class="grid-list-xl text-xl-center">
+                    <div class="sec-title"><h2>Meet Our Crew</h2></div>
+                    <div class="layout row wrap align-center justify-center">
+                        <div
+                            class="flex xs12 sm12 md4 lg4 x14 tetx-center mb-sm-0 mb-3"
+                        >
+                            <div class="team-card md-6">
+                                <v-img
+                                    lazy-src="/images/data/user-1.jpg"
+                                    src="/images/data/user-1.jpg"
+                                    width="200"
+                                    height="200"
+                                    class="br-100 m-auto"
+                                ></v-img>
+                                <!-- <img
+                                    src="/images/data/user-1.jpg"
+                                    width="200"
+                                    height="200"
+                                    class="br-100"
+                                /> -->
+                            </div>
+                            <div class="team-content">
+                                <h4 class="mb-0">Anthony Gilbert</h4>
+                                <p class="mb-6">CEO</p>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Doloremque esse iure
+                                    aliquid enim, corrupti distinctio sit
+                                    praesentium ducimus incidunt rem facilis
+                                    expedita illo at tempore natus nihil
+                                    veritatis accusamus vel.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex xs12 sm12 md4 lg4 x14 tetx-center mb-sm-0 mb-3"
+                        >
+                            <div class="team-card md-6">
+                                <v-img
+                                    lazy-src="/images/data/user-2.jpg"
+                                    src="/images/data/user-2.jpg"
+                                    width="200"
+                                    height="200"
+                                    class="br-100 m-auto"
+                                ></v-img>
+                            </div>
+                            <div class="team-content">
+                                <h4 class="mb-0">Jonathan Salvatore</h4>
+                                <p class="mb-6">Chief-Executive</p>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Doloremque esse iure
+                                    aliquid enim, corrupti distinctio sit
+                                    praesentium ducimus incidunt rem facilis
+                                    expedita illo at tempore natus nihil
+                                    veritatis accusamus vel.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex xs12 sm12 md4 lg4 x14 tetx-center mb-sm-0 mb-3"
+                        >
+                            <div class="team-card md-6">
+                                <v-img
+                                    lazy-src="/images/data/user-3.jpg"
+                                    src="/images/data/user-3.jpg"
+                                    width="200"
+                                    height="200"
+                                    class="br-100 m-auto"
+                                ></v-img>
+                            </div>
+                            <div class="team-content">
+                                <h4 class="mb-0">Alexis Rive</h4>
+                                <p class="mb-6">Sr. Supervisor</p>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Doloremque esse iure
+                                    aliquid enim, corrupti distinctio sit
+                                    praesentium ducimus incidunt rem facilis
+                                    expedita illo at tempore natus nihil
+                                    veritatis accusamus vel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </v-container>
             </div>
         </div>
     </div>

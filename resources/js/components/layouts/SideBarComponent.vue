@@ -9,7 +9,15 @@
             <v-spacer></v-spacer>
             <div class="notifications d-inline-flex align-items-center">
                 <div class="mr-3">
-                    <v-btn class="accent" fab elevation small>
+                    <v-btn
+                        class="cart-btn accent"
+                        fab
+                        rounded
+                        small
+                        depressed
+                        :dark="true"
+                        text
+                    >
                         <v-tab>
                             <v-badge color="#ff5722" content="1">
                                 <v-icon>mdi-cart</v-icon>
@@ -18,7 +26,15 @@
                     </v-btn>
                 </div>
                 <div class="mr-3">
-                    <v-btn class="accent" fab elevation small>
+                    <v-btn
+                        class="wishlist-btn accent"
+                        fab
+                        rounded
+                        small
+                        depressed
+                        :dark="true"
+                        textd
+                    >
                         <v-tab>
                             <v-badge color="#ff5722" content="1">
                                 <v-icon>mdi-heart</v-icon>

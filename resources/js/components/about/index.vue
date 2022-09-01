@@ -56,7 +56,6 @@
                                 lazy-src="/images/data/about-us.jpg"
                                 src="/images/data/about-us.jpg"
                                 width="700"
-                                height="800"
                             ></v-img>
                         </div>
                     </div>
@@ -73,7 +72,6 @@
                                 src="/images/data/our-mission.jpg"
                                 alt="mission"
                                 width="569"
-                                height="442"
                             ></v-img>
                         </div>
                         <div class="flex pl-12 xl6 xs12 md6 lg6">
@@ -104,7 +102,6 @@
                                 src="/images/data/our-vision.jpg"
                                 alt="vission"
                                 width="569"
-                                height="442"
                             ></v-img>
                         </div>
                         <div class="flex pr-12 xl6 xs12 md6 lg6">
@@ -134,7 +131,8 @@
                 <div class="container grid-list-xl py-0">
                     <div class="layout row wrap align-center justify-center">
                         <div class="flex xl6 sm12 md8 lg6">
-                            <div class="slider">
+                            <!-- <div class="slider"> -->
+                            <VueSlickCarousel v-bind="settings">
                                 <div>
                                     <div>
                                         <div>
@@ -374,13 +372,14 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </VueSlickCarousel>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
             </div>
             <div
-                class="team-section text-center section-gap blue-grey lighten-5"
+                class="team-section text-center section-gap blue-grey lighten-5 mb-3"
             >
                 <v-container class="grid-list-xl text-xl-center">
                     <div class="sec-title"><h2>Meet Our Crew</h2></div>
@@ -469,13 +468,179 @@
                     </div>
                 </v-container>
             </div>
+            <div class="about-contact-form">
+                <div class="layout row wrap">
+                    <div
+                        class="flex about-contact-bg xs12 sm12 md6 lg6 xl6"
+                    ></div>
+                    <div class="flex xs12 sm12 md6 lg6 xl6 section-gap">
+                        <div class="about-contact-form-inner">
+                            <div><h2 class="mb-3">Write to Us</h2></div>
+                            <form novalidate="novalidate" class="v-form">
+                                <div
+                                    class="v-input theme--light v-text-field v-text-field--is-booted v-text-field--placeholder"
+                                >
+                                    <div class="v-input__control">
+                                        <div class="v-input__slot">
+                                            <div class="v-text-field__slot">
+                                                <input
+                                                    id="input-240"
+                                                    placeholder="First Name"
+                                                    type="text"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="v-text-field__details">
+                                            <div
+                                                class="v-messages theme--light"
+                                            >
+                                                <div
+                                                    class="v-messages__wrapper"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="v-input theme--light v-text-field v-text-field--is-booted v-text-field--placeholder"
+                                >
+                                    <div class="v-input__control">
+                                        <div class="v-input__slot">
+                                            <div class="v-text-field__slot">
+                                                <input
+                                                    id="input-243"
+                                                    placeholder="Last Name"
+                                                    type="text"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="v-text-field__details">
+                                            <div
+                                                class="v-messages theme--light"
+                                            >
+                                                <div
+                                                    class="v-messages__wrapper"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="v-input theme--light v-text-field v-text-field--is-booted v-text-field--placeholder"
+                                >
+                                    <div class="v-input__control">
+                                        <div class="v-input__slot">
+                                            <div class="v-text-field__slot">
+                                                <input
+                                                    id="input-246"
+                                                    placeholder="Email"
+                                                    type="email"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="v-text-field__details">
+                                            <div
+                                                class="v-messages theme--light"
+                                            >
+                                                <div
+                                                    class="v-messages__wrapper"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="v-input theme--light v-text-field v-text-field--is-booted v-text-field--placeholder"
+                                >
+                                    <div class="v-input__control">
+                                        <div class="v-input__slot">
+                                            <div class="v-text-field__slot">
+                                                <input
+                                                    id="input-249"
+                                                    placeholder="Subject"
+                                                    type="text"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="v-text-field__details">
+                                            <div
+                                                class="v-messages theme--light"
+                                            >
+                                                <div
+                                                    class="v-messages__wrapper"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="v-input v-textarea theme--light v-text-field v-text-field--is-booted"
+                                >
+                                    <div class="v-input__control">
+                                        <div class="v-input__slot">
+                                            <div class="v-text-field__slot">
+                                                <label
+                                                    for="input-252"
+                                                    class="v-label theme--light"
+                                                    style="
+                                                        left: 0px;
+                                                        right: auto;
+                                                        position: absolute;
+                                                    "
+                                                    >Leave a Message</label
+                                                ><textarea
+                                                    id="input-252"
+                                                    rows="2"
+                                                ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="v-text-field__details">
+                                            <div
+                                                class="v-messages theme--light"
+                                            >
+                                                <div
+                                                    class="v-messages__wrapper"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <v-btn
+                                    class="mx-0 white--text"
+                                    color="#ff5722"
+                                    large
+                                    depressed
+                                    >Send Message</v-btn
+                                >
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+// optional style for arrows & dots
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
     name: "AboutComponent",
+    components: { VueSlickCarousel },
+    data() {
+        return {
+            settings: {
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                dots: false,
+                arrows: false,
+            },
+        };
+    },
 };
 </script>
 

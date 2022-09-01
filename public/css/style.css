@@ -28,6 +28,9 @@
     background-color: #283593 !important;
     border-color: #283593 !important;
 }
+.about-contact-bg{
+    background-image: url(../images/data/about-contact.jpg) !important;
+}
 .footer li a{
     color: #fff;
     line-height: 27px;
@@ -39,4 +42,12 @@
 .footer hr{
     border: 1px solid hsla(0,0%,100%,.2);
     margin: 3rem 0;
+}
+mb12{
+    margin-bottom: 12px !important;
+}
+@media (min-width: 1264px) {
+    .container{
+        max-width: 1410px !important;
+    }
 }

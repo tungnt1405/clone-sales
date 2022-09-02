@@ -6,6 +6,8 @@ import App from "./App.vue";
 import router from "./router/index.js";
 import NProgress from "vue-nprogress";
 import vuetify from "./plugins/vuetify";
+import * as VueGoogleMaps from "vue2-google-maps";
+
 const options = {
     latencyThreshold: 200, // Number of ms before progressbar starts showing, default: 100,
     router: true, // Show progressbar when navigating routes, default: true
@@ -14,10 +16,14 @@ const options = {
 Vue.use(NProgress, options);
 
 const nprogress = new NProgress();
-// Vue.component(
-//     "example-component",
-//     require("./components/ExampleComponent.vue").default
-// );
+
+Vue.use(VueGoogleMaps, {
+    load: {
+        key: "AIzaSyCu3DnQN8y39_Ydc5hJ0MQ7zYhTvetET44",
+        libraries: "places",
+    },
+});
+
 const app = new Vue({
     el: "#app",
     router,

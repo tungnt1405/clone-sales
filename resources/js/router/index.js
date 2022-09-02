@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 // Views
 import HomeView from "../views/HomeView";
 import AboutView from "../views/AboutView";
+import ContactView from "../views/ContactView";
 
 const routes = [
     { path: "/", name: "HomeView", component: HomeView },
@@ -13,6 +14,11 @@ const routes = [
         path: "/about",
         name: "AboutView",
         component: AboutView,
+    },
+    {
+        path: "/contact",
+        name: "ContactView",
+        component: ContactView,
     },
     { path: "*", component: () => import("../views/errors/NotFound.vue") },
 ];

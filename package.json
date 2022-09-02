@@ -29,6 +29,7 @@
         "vue-nprogress": "^0.2.0",
         "vue-router": "^3.6.4",
         "vue-slick-carousel": "^1.0.6",
+        "vue2-google-maps": "^0.10.7",
         "vuetify": "^2.6.9"
     }
 }

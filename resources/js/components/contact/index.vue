@@ -34,16 +34,16 @@
                 <v-container class="grid-list-xl py-0">
                     <div class="section-gap">
                         <div class="layout row wrap">
-                            <div class="flex sm12 md12 lg5 x15">
+                            <div class="flex sm12 md12 lg5 xl5">
                                 <div class="sec-title">
                                     <h2
-                                        class="justify-start align-center v-layout"
+                                        class="v-layout justify-start align-center"
                                     >
                                         Contact Info
                                     </h2>
-                                    <h5 class="font-italic mb-6">
-                                        If you have any problems,suggestions and
-                                        feedback then please feel free to
+                                    <h5 class="font-italic mb-6 text-justify">
+                                        If you have any problems, suggestions
+                                        and feedback then please feel free to
                                         contact with us. Choose our
                                         communication sources. We will love to
                                         hear from you

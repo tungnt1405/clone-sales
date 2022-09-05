@@ -25,9 +25,7 @@
                                 >
                             </li>
                             <li>
-                                <a href="/privacy-policy" class=""
-                                    >Privacy Policy</a
-                                >
+                                <a href="/privacy" class="">Privacy Policy</a>
                             </li>
                             <li><a href="/faq" class="">FAQ</a></li>
                             <li><a href="/contact" class="">Contact Us</a></li>

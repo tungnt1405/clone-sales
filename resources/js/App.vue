@@ -1,7 +1,10 @@
 <template>
-    <div>
-        <router-view></router-view>
-    </div>
+    <v-app>
+        <v-app-bar app color="primary">header</v-app-bar>
+        <v-main>
+            <router-view></router-view>
+        </v-main>
+    </v-app>
 </template>
 
 <script>

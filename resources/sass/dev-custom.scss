@@ -1,15 +1,5 @@
 // Variables
 @import 'dev-variables';
 
-//background-color
-@mixin bgc($color: red){
-    background-color: $color;
-}
-
-//circle style
-@mixin circle ($width, $height:$width, $color: red) {
-    @include bgc($color);
-    width: $width;
-    height: $height;
-    border-radius: 50%;
-}
+//mixin
+@import 'mixin';

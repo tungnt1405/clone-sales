@@ -1,0 +1,11 @@
+//background-color
+@mixin bgc($color: red){
+    background-color: $color;
+}
+
+//circle style
+@mixin circle ($width, $height:$width) {
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+}

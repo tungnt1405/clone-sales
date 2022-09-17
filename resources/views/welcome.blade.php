@@ -6,6 +6,7 @@
 
         <!-- Main styles for this application -->
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/reset.css') }}" rel="stylesheet">
         <meta id="csrf-token" name="csrf-token" value="{{ csrf_token() }}">
     </head>
     <body>

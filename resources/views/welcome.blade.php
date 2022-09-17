@@ -6,7 +6,9 @@
 
         <title>Laravel</title>
 
+        <link href="{{ mix('css/dev-custom.css') }}" rel="stylesheet">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+        <link href="{{ mix('css/reset.css') }}" rel="stylesheet">
         <meta id="csrf-token" name="csrf-token" value="{{ csrf_token() }}">
     </head>
     <body>

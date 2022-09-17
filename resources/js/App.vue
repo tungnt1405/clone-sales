@@ -1,6 +1,9 @@
 <template>
     <v-app>
-        <v-app-bar app color="primary">header</v-app-bar>
+        <v-app-bar app color="primary">
+            <div class="header-top">Top</div>
+            <div class="header-bottom">Bottom</div>
+        </v-app-bar>
         <v-main>
             <router-view></router-view>
         </v-main>

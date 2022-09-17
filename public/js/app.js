@@ -2064,7 +2064,11 @@ var render = function render() {
       app: "",
       color: "primary"
     }
-  }, [_vm._v("header")]), _vm._v(" "), _c("v-main", [_c("router-view")], 1)], 1);
+  }, [_c("div", {
+    staticClass: "header-top"
+  }, [_vm._v("Top")]), _vm._v(" "), _c("div", {
+    staticClass: "header-bottom"
+  }, [_vm._v("Bottom")])]), _vm._v(" "), _c("v-main", [_c("router-view")], 1)], 1);
 };
 
 var staticRenderFns = [];
@@ -6482,7 +6486,7 @@ render._withStripped = true;
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vuetify/dist/vuetify.min.css":
 /*!***********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vuetify/dist/vuetify.min.css ***!
+  !*** ./node_modules/css-loader??ref--8-1!./node_modules/postcss-loader/src??ref--8-2!./node_modules/vuetify/dist/vuetify.min.css ***!
   \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -99828,7 +99832,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_vue__;
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../css-loader??ref--6-1!../../postcss-loader/src??ref--6-2!./vuetify.min.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vuetify/dist/vuetify.min.css");
+var content = __webpack_require__(/*! !../../css-loader??ref--8-1!../../postcss-loader/src??ref--8-2!./vuetify.min.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vuetify/dist/vuetify.min.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -100236,15 +100240,39 @@ var routes = [{
 
 /***/ }),
 
+/***/ "./resources/sass/dev-custom.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/dev-custom.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/reset.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/reset.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/reset.scss ./resources/sass/dev-custom.scss ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\xampp\htdocs\clone-sales\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\xampp\htdocs\clone-sales\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\xampp\htdocs\clone-sales\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\xampp\htdocs\clone-sales\resources\sass\reset.scss */"./resources/sass/reset.scss");
+module.exports = __webpack_require__(/*! D:\xampp\htdocs\clone-sales\resources\sass\dev-custom.scss */"./resources/sass/dev-custom.scss");
 
 
 /***/ })

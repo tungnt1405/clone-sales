@@ -1,9 +1,6 @@
 <template>
     <v-app>
-        <v-app-bar app color="primary">
-            <div class="header-top">Top</div>
-            <div class="header-bottom">Bottom</div>
-        </v-app-bar>
+        <Menu />
         <v-main>
             <router-view></router-view>
         </v-main>
@@ -11,7 +8,8 @@
 </template>
 
 <script>
-export default {};
+import Menu from "./Views/layouts/Menu.vue";
+export default { components: { Menu } };
 </script>
 
 <style></style>

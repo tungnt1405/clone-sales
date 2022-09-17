@@ -3,3 +3,25 @@
 
 //mixin
 @import 'mixins';
+
+*, :after, :before {
+    box-sizing: border-box !important;
+}
+.min-w-0{
+    min-width: 0 !important;
+}
+
+.menu ,.menu > .v-toolbar__content{
+    height: auto !important;
+}
+
+.headers{
+    .header-wrap{
+        .top-header--wrap{
+            .top-header{
+                height: 6.25rem;
+                @include bgc($top-header)
+            }
+        }
+    }
+}

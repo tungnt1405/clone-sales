@@ -1,0 +1,20 @@
+*,
+:after,
+:before {
+  box-sizing: border-box !important;
+}
+
+.min-w-0 {
+  min-width: 0 !important;
+}
+
+.menu,
+.menu > .v-toolbar__content {
+  height: auto !important;
+}
+
+.headers .header-wrap .top-header--wrap .top-header {
+  height: 6.25rem;
+  background-color: hsla(0deg, 0%, 100%, 0.05);
+}
+

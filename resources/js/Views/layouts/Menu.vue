@@ -21,10 +21,14 @@
                             <div
                                 class="top-header--notification d-inline-flex align-items-center"
                             >
-                                <div class="mr-3">
+                                <div
+                                    class="mr-3"
+                                    v-for="(item, index) in buttons"
+                                    :key="index"
+                                >
                                     <v-btn
                                         type="button"
-                                        class="cart-btn"
+                                        :class="item.class"
                                         color="accent"
                                         :dark="true"
                                         small
@@ -36,26 +40,9 @@
                                             :content="value"
                                             :value="value"
                                         >
-                                            <v-icon dark> mdi-cart </v-icon>
-                                        </v-badge></v-btn
-                                    >
-                                </div>
-                                <div class="mr-3">
-                                    <v-btn
-                                        type="button"
-                                        class="favorite-btn"
-                                        color="accent"
-                                        :dark="true"
-                                        small
-                                        fab
-                                        depressed
-                                    >
-                                        <v-badge
-                                            color="accent"
-                                            :content="value"
-                                            :value="value"
-                                        >
-                                            <v-icon dark> mdi-heart </v-icon>
+                                            <v-icon dark>
+                                                {{ item.icon }}</v-icon
+                                            >
                                         </v-badge></v-btn
                                     >
                                 </div>
@@ -84,29 +71,19 @@
                                             <v-list-item-content
                                                 class="justify-center"
                                             >
-                                                <v-list-item link>
-                                                    <v-icon class="mr-2"
-                                                        >mdi-account-circle</v-icon
-                                                    >
-                                                    <span>User Profile</span>
-                                                </v-list-item>
-                                                <v-list-item link>
-                                                    <v-icon class="mr-2"
-                                                        >mdi-cog</v-icon
-                                                    >
-                                                    <span>Account</span>
-                                                </v-list-item>
-                                                <v-list-item link>
-                                                    <v-icon class="mr-2"
-                                                        >mdi-email</v-icon
-                                                    >
-                                                    <span>Messages</span>
-                                                </v-list-item>
-                                                <v-list-item link>
-                                                    <v-icon class="mr-2"
-                                                        >mdi-power</v-icon
-                                                    >
-                                                    <span>Log Out</span>
+                                                <v-list-item
+                                                    link
+                                                    v-for="(
+                                                        item, index
+                                                    ) in accounts"
+                                                    :key="index"
+                                                >
+                                                    <v-icon class="mr-2">{{
+                                                        item.icon
+                                                    }}</v-icon>
+                                                    <span>{{
+                                                        item.title
+                                                    }}</span>
                                                 </v-list-item>
                                             </v-list-item-content>
                                         </v-card>
@@ -116,6 +93,42 @@
                         </div>
                     </v-container>
                 </div>
+            </div>
+            <div class="bottom-header--wrap d-block primary">
+                <v-container>
+                    <div class="position-relative">
+                        <div class="menu-alignment">
+                            <div class="text-center">
+                                <ul class="pl-0 app-nav-list">
+                                    <li
+                                        class="app-nav-item"
+                                        v-for="(item, index) in menus"
+                                        :key="index"
+                                    >
+                                        <router-link :to="item.path">{{
+                                            item.title
+                                        }}</router-link>
+                                        <ul
+                                            class="sub-menu"
+                                            v-if="item.sub_menu"
+                                        >
+                                            <li
+                                                v-for="(
+                                                    i, ind
+                                                ) in item.sub_menu"
+                                                :key="ind"
+                                            >
+                                                <router-link :to="i.path">{{
+                                                    i.title
+                                                }}</router-link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </v-container>
             </div>
         </div>
     </div>
@@ -128,6 +141,36 @@ export default {
         return {
             logo: "../images/common/logo.png",
             value: 1,
+            buttons: [
+                {
+                    class: "cart-btn",
+                    icon: "mdi-cart",
+                },
+                {
+                    class: "favorite-btn",
+                    icon: "mdi-heart",
+                },
+            ],
+            accounts: [
+                { icon: "mdi-account-circle", title: "User Profile" },
+                { icon: "mdi-cog", title: "Account" },
+                { icon: "mdi-email", title: "Messages" },
+                { icon: "mdi-power", title: "Log Out" },
+            ],
+            menus: [
+                { path: "/", title: "Home" },
+                { path: "javascript:void(0)", title: "Shop" },
+                {
+                    path: "javascript:void(0)",
+                    title: "Pages",
+                    sub_menu: [
+                        { path: "javascript:void(0)", title: "About" },
+                        { path: "javascript:void(0)", title: "FAQ" },
+                        { path: "javascript:void(0)", title: "Privacy policy" },
+                    ],
+                },
+                { path: "javascript:void(0)", title: "Contact Us" },
+            ],
         };
     },
 };

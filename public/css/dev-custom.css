@@ -8,6 +8,10 @@
   min-width: 0 !important;
 }
 
+.pl-100 {
+  padding-left: 100px !important;
+}
+
 a {
   background-color: transparent;
   transition: all 0.5s ease 0s;
@@ -123,17 +127,51 @@ a:focus {
   visibility: hidden;
 }
 
+.v-menu__content {
+  margin-top: 10px;
+}
+
+.nav__menu-icon {
+  display: none;
+}
+
+.nav__menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  display: none;
+}
+
+.nav__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background-image: url(/images/bg-sidebar.jpg?6fe4a92b0cab0e440d7d32989c28f4f1);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: cover;
+  background-color: #424242;
+  display: none;
+}
+
+.nav__menu-close {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
 @media only screen and (max-width: 64em) {
   .top-header .top-header--logo .v-image__image {
     width: 140px;
   }
 
-  .menu-alignment {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 46.1875em) {
   .top-header--logo .v-responsive__content {
     width: 140px;
   }
@@ -149,6 +187,25 @@ a:focus {
   .headers .header-wrap .top-header--wrap .top-header--notification > div .v-btn .menu__icon {
     width: 20px !important;
     height: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 46.1875em) {
+  .menu-alignment {
+    display: none;
+  }
+
+  #nav__menu-sp:checked ~ .nav__menu-overlay {
+    display: block;
+  }
+
+  #nav__menu-sp:checked ~ .nav__menu {
+    display: block;
+  }
+
+  .nav__menu-icon {
+    display: inline-block;
+    cursor: pointer;
   }
 }
 

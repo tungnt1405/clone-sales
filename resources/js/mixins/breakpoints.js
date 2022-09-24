@@ -1,6 +1,7 @@
 export default {
     data: () => ({
         isMobile: false,
+        isTablet: false,
     }),
 
     beforeDestroy() {
@@ -19,6 +20,7 @@ export default {
     methods: {
         onResize() {
             this.isMobile = window.innerWidth < 600;
+            this.isTablet = window.innerWidth <= 1024;
         },
     },
 };

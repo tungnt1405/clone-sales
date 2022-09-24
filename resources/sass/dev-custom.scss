@@ -113,3 +113,21 @@ a:hover, a:active, a:focus{
     opacity: 0;
     visibility: hidden;
 }
+
+//mobile & tablet: < 1024px
+@media only screen and (max-width: 64em) {
+    .top-header .top-header--logo .v-image__image {
+        width: 140px;
+    }
+    .menu-alignment{
+        display:none
+    }
+}
+//mobile css: < 740px
+@media only screen and (max-width: 46.1875em) {
+}
+
+//tablet : 740 < x < 1024 px
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}

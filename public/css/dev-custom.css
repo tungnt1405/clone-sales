@@ -123,3 +123,13 @@ a:focus {
   visibility: hidden;
 }
 
+@media only screen and (max-width: 64em) {
+  .top-header .top-header--logo .v-image__image {
+    width: 140px;
+  }
+
+  .menu-alignment {
+    display: none;
+  }
+}
+

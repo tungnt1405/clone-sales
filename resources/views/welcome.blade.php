@@ -10,6 +10,9 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <link href="{{ mix('css/reset.css') }}" rel="stylesheet">
         <meta id="csrf-token" name="csrf-token" value="{{ csrf_token() }}">
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <![endif]-->
     </head>
     <body>
         <div id="app">

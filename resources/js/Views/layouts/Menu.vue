@@ -7,10 +7,11 @@
                         <div
                             class="d-flex flex-nowrap align-center justify-space-between min-w-0 w-100 py-5"
                         >
-                            <span>&nbsp;</span>
+                            <span class="hidden-md-and-down">&nbsp;</span>
                             <div class="top-header--logo d-inline-block">
                                 <router-link :to="{ name: 'Home' }"
                                     ><v-img
+                                        contain
                                         :src="logo"
                                         :lazy-src="logo"
                                         width="224"

@@ -162,9 +162,9 @@
                             <v-list-item-content>
                                 <v-list-item-group light>
                                     <v-list-item dark link multiple>
-                                        <v-list--item-title class="px-0 pl-2">
+                                        <v-list-item-title class="px-0 pl-2">
                                             <v-icon>mdi-home</v-icon>
-                                            Home</v-list--item-title
+                                            Home</v-list-item-title
                                         >
                                         <v-list-item-action>
                                             <v-list-item-icon

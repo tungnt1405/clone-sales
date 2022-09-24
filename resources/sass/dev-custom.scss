@@ -130,6 +130,7 @@ a:hover, a:active, a:focus{
     left: 0;
     background-color: rgba($color: #000000, $alpha: 0.3);
     z-index: 9;
+    animation: fadeIn 0.2s linear;
     display: none;
 }
 .nav__menu{
@@ -143,7 +144,17 @@ a:hover, a:active, a:focus{
     background-position: 100% 0;
     background-size: cover;
     background-color: $nav__menu-sp;
-    display: none;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .nav__menu-close{
     display: flex;
@@ -184,7 +195,8 @@ a:hover, a:active, a:focus{
         display: block;
     }
     #nav__menu-sp:checked ~ .nav__menu{
-        display: block;
+        opacity: 1;
+        transform: translateX(0%);
     }
     .nav__menu-icon{
         display: inline-block;

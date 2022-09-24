@@ -133,3 +133,22 @@ a:focus {
   }
 }
 
+@media only screen and (max-width: 46.1875em) {
+  .top-header--logo .v-responsive__content {
+    width: 140px;
+  }
+
+  .headers .header-wrap .top-header--wrap .top-header--notification > div,
+  .headers .header-wrap .top-header--wrap .top-header--notification > div .v-btn--fab.v-size--small,
+  .headers .header-wrap .top-header--wrap .top-header--notification > div .v-btn .v-avatar {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+  }
+
+  .headers .header-wrap .top-header--wrap .top-header--notification > div .v-btn .menu__icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+

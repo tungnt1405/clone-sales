@@ -41,7 +41,13 @@
                                             :content="value"
                                             :value="value"
                                         >
-                                            <v-icon dark>
+                                            <v-icon
+                                                dark
+                                                class="menu__icon"
+                                                :small="
+                                                    !isMobile() ? false : true
+                                                "
+                                            >
                                                 {{ item.icon }}</v-icon
                                             >
                                         </v-badge></v-btn

@@ -1,5 +1,5 @@
 <template>
-    <div class="headers">
+    <div class="headers" ref="headers">
         <div class="header-wrap">
             <div class="top-header--wrap d-block primary">
                 <div class="top-header">
@@ -181,7 +181,70 @@
                 </v-container>
             </div>
         </div>
-        <div class="fixedHeader">aq</div>
+        <div class="fixedHeader" :class="{ menu__active: showMenuFixed }">
+            <div class="fixed__header-wrap">
+                <div class="header-wrap primary px-4">
+                    <v-container class="grid-list-xl">
+                        <div
+                            class="layout align-center justify-space-between row ma-0"
+                        >
+                            <div class="top-header--logo d-inline-block">
+                                <router-link :to="{ name: 'Home' }"
+                                    ><v-img
+                                        contain
+                                        :src="logo"
+                                        :lazy-src="logo"
+                                        width="224"
+                                        height="34"
+                                    ></v-img
+                                ></router-link>
+                            </div>
+                            <div>
+                                <div class="menu-alignment">
+                                    <div class="text-center">
+                                        <ul class="pl-0 app-nav-list">
+                                            <li
+                                                class="app-nav-item"
+                                                v-for="(item, index) in menus"
+                                                :key="index"
+                                            >
+                                                <router-link :to="item.path">{{
+                                                    item.title
+                                                }}</router-link>
+                                                <ul
+                                                    class="sub-menu"
+                                                    v-if="item.sub_menu"
+                                                >
+                                                    <li
+                                                        v-for="(
+                                                            i, ind
+                                                        ) in item.sub_menu"
+                                                        :key="ind"
+                                                    >
+                                                        <router-link
+                                                            :to="i.path"
+                                                            >{{
+                                                                i.title
+                                                            }}</router-link
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <label
+                                    for="nav__menu-sp"
+                                    class="nav__menu-icon"
+                                >
+                                    <v-icon color="white">mdi-menu</v-icon>
+                                </label>
+                            </div>
+                        </div>
+                    </v-container>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -192,6 +255,7 @@ export default {
     mixins: [breakpoints],
     data: () => {
         return {
+            showMenuFixed: false,
             logo: "../images/common/logo.png",
             value: 1,
             buttons: [
@@ -225,6 +289,22 @@ export default {
                 { path: "javascript:void(0)", title: "Contact Us" },
             ],
         };
+    },
+    created() {
+        window.addEventListener("scroll", this.scrollFunction);
+    },
+    destroyed() {
+        window.removeEventListener("scroll", this.scrollFunction);
+    },
+    methods: {
+        scrollFunction(event) {
+            let elementHeight = this.$refs.headers.clientHeight;
+            if (window.pageYOffset > elementHeight) {
+                this.showMenuFixed = true;
+                return;
+            }
+            this.showMenuFixed = false;
+        },
     },
 };
 </script>

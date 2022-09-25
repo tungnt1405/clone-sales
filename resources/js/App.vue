@@ -1,7 +1,7 @@
 <template>
     <v-app id="inspire">
         <Menu />
-        <v-main app>
+        <v-main app style="height: 1080px">
             <router-view></router-view>
         </v-main>
     </v-app>

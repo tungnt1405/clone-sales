@@ -118,13 +118,19 @@ a:focus {
 
 .fixedHeader {
   transition: 0.4s ease-in-out 0s;
-  z-index: 99;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   opacity: 0;
   visibility: hidden;
+  z-index: 9;
+}
+
+.menu__active {
+  opacity: 1;
+  visibility: visible;
+  top: 0px;
 }
 
 .v-menu__content {
@@ -229,6 +235,17 @@ a:focus {
   }
 
   .nav__menu-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .fixedHeader .menu-alignment {
+    display: none;
+  }
+
+  .fixedHeader .nav__menu-icon {
     display: inline-block;
     cursor: pointer;
   }

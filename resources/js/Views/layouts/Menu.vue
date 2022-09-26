@@ -281,7 +281,7 @@ export default {
                     path: "javascript:void(0)",
                     title: "Pages",
                     sub_menu: [
-                        { path: "javascript:void(0)", title: "About" },
+                        { path: "/about", title: "About" },
                         { path: "javascript:void(0)", title: "FAQ" },
                         { path: "javascript:void(0)", title: "Privacy policy" },
                     ],

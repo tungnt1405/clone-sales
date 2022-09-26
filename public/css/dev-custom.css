@@ -1,3 +1,7 @@
+/*
+* Common
+*/
+
 *,
 :after,
 :before {
@@ -123,6 +127,7 @@ a:focus {
   left: 0;
   right: 0;
   opacity: 0;
+  transition: opacity linear 0.5s;
   visibility: hidden;
   z-index: 9;
 }
@@ -197,6 +202,60 @@ a:focus {
   min-width: 0;
 }
 
+/*
+* About Page
+*/
+
+.about__header {
+  background-image: url(/images/page-title-bar.jpg?6a9b0b06e617f946606a3e878f8915d6);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.about__header .about__header-title {
+  line-height: 1.4;
+  font-size: 3.25rem;
+  text-transform: capitalize;
+}
+
+.about__header .about__header-body {
+  font-size: 1.28rem;
+  font-weight: 400;
+}
+
+.about__content .section__gap {
+  padding: 5rem 0;
+}
+
+.about__content .section__gap .section__gap-body {
+  padding: 15px;
+}
+
+.about__content .section__gap .section__gap-body .section__gap-title h2 {
+  line-height: 1.1;
+  font-size: 3.2rem;
+}
+
+.about__content .section__gap .section__gap-body .section__gap-title h3 {
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+.about__content .section__gap .section__gap-body .section__gap-title p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 1264px) {
+  .container {
+    max-width: 1450px !important;
+  }
+}
+
 @media only screen and (max-width: 64em) {
   .top-header .top-header--logo .v-image__image {
     width: 140px;
@@ -217,6 +276,11 @@ a:focus {
   .headers .header-wrap .top-header--wrap .top-header--notification > div .v-btn .menu__icon {
     width: 20px !important;
     height: 20px !important;
+  }
+
+  .about__content .section__gap .section__gap-body .section__gap-title h2 {
+    line-height: 1.1;
+    font-size: 2.2rem;
   }
 }
 

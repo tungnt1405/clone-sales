@@ -4,6 +4,10 @@
 //mixin
 @import 'mixins';
 
+
+/*
+* Common
+*/
 *, :after, :before {
     box-sizing: border-box !important;
 }
@@ -113,6 +117,7 @@ a:hover, a:active, a:focus{
     left: 0;
     right: 0;
     opacity: 0;
+    transition: opacity linear 0.5s;
     visibility: hidden;
     z-index: 9;
 }
@@ -167,6 +172,57 @@ a:hover, a:active, a:focus{
     flex-wrap: nowrap;
     min-width: 0;
 }
+
+/*
+* About Page
+*/
+.about__header{
+    background-image: url("images/data/page-title-bar.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 7rem 0;
+    text-align: center;
+    .about__header-title{
+        line-height: 1.4;
+        font-size: 3.25rem;
+        text-transform: capitalize;
+    }
+    .about__header-body{
+        font-size: 1.28rem;
+        font-weight: 400;
+    }
+}
+
+.about__content{
+    .section__gap{
+        padding: 5rem 0;
+        .section__gap-body{
+            padding: 15px;
+            .section__gap-title h2{
+                line-height: 1.1;
+                font-size: 3.2rem;
+            }
+            .section__gap-title h3{
+                line-height: 1.4;
+                font-size: 1.5rem;
+            }
+            .section__gap-title p{
+                font-size: .875rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1264px){
+    .container {
+        max-width: 1450px !important;
+    }
+}
+
 //mobile & tablet: < 1024px
 @media only screen and (max-width: 64em) {
     .top-header .top-header--logo .v-image__image {
@@ -190,6 +246,16 @@ a:hover, a:active, a:focus{
         height: 20px !important;
     }
     
+    .about__content{
+        .section__gap{
+            .section__gap-body{
+                .section__gap-title h2{
+                    line-height: 1.1;
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
 }
 //mobile css: < 740px
 @media only screen and (max-width: 46.1875em) {

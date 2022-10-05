@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="about__content">
-                <div class="section__gap">
+                <div class="about__page section__gap">
                     <v-row>
                         <v-container class="grid-list-xl d-flex flex-wrap">
                             <v-col
@@ -54,6 +54,98 @@
                                         src="images/data/about-us.jpg"
                                         lazy-src="images/data/about-us.jpg"
                                     ></v-img>
+                                </div>
+                            </v-col>
+                        </v-container>
+                    </v-row>
+                </div>
+                <div class="about__info section__gap blue-grey lighten-5">
+                    <v-row>
+                        <v-container class="grid-list-xl d-flex flex-wrap">
+                            <v-col cols="12" lg="6" class="section__gap-image">
+                                <div class="text-center text-lg-left">
+                                    <v-img
+                                        src="images/data/our-mission.jpg"
+                                        lazy-src="images/data/our-mission.jpg"
+                                        contain
+                                    ></v-img>
+                                </div>
+                            </v-col>
+                            <v-col
+                                cols="12"
+                                lg="6"
+                                class="section__gap-body pr-5"
+                            >
+                                <div class="section__gap-title">
+                                    <h2
+                                        class="font-weight-bold font-italic mb-6"
+                                    >
+                                        Our Mission
+                                    </h2>
+                                    <h4 class="font-weight-bold mb-6">
+                                        nulla dolor dicta laborum unde molestias
+                                        ab magni.Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit
+                                    </h4>
+                                    <p class="mb-6">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Quaerat quibusdam cum
+                                        blanditiis voluptas, voluptates hic eius
+                                        maxime dolorum saepe quae animi eveniet
+                                        nulla dolor dicta laborum unde molestias
+                                        ab magni.Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Quaerat
+                                        quibusdam cum blanditiis voluptas,
+                                        voluptates hic eius maxime dolorum saepe
+                                        quae animi eveniet nulla dolor dicta
+                                        laborum unde molestias ab magni.
+                                    </p>
+                                </div>
+                            </v-col>
+                        </v-container>
+                    </v-row>
+                    <v-row>
+                        <v-container
+                            class="grid-list-xl d-flex flex-wrap flex-lg-row-reverse"
+                        >
+                            <v-col cols="12" lg="6" class="section__gap-image">
+                                <div class="text-center text-lg-left">
+                                    <v-img
+                                        src="images/data/our-vision.jpg"
+                                        lazy-src="images/data/our-vision.jpg"
+                                        contain
+                                    ></v-img>
+                                </div>
+                            </v-col>
+                            <v-col
+                                cols="12"
+                                lg="6"
+                                class="section__gap-body pr-5"
+                            >
+                                <div class="section__gap-title">
+                                    <h2
+                                        class="font-weight-bold font-italic mb-6"
+                                    >
+                                        Our Vision
+                                    </h2>
+                                    <h4 class="font-weight-bold mb-6">
+                                        nulla dolor dicta laborum unde molestias
+                                        ab magni.Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit
+                                    </h4>
+                                    <p class="mb-6">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Quaerat quibusdam cum
+                                        blanditiis voluptas, voluptates hic eius
+                                        maxime dolorum saepe quae animi eveniet
+                                        nulla dolor dicta laborum unde molestias
+                                        ab magni.Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Quaerat
+                                        quibusdam cum blanditiis voluptas,
+                                        voluptates hic eius maxime dolorum saepe
+                                        quae animi eveniet nulla dolor dicta
+                                        laborum unde molestias ab magni.
+                                    </p>
                                 </div>
                             </v-col>
                         </v-container>

@@ -35,9 +35,9 @@ __webpack_require__.r(__webpack_exports__);
       slick: {
         arrows: false,
         dots: false,
-        cssEase: "linear",
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 2000,
+        infinite: true
       }
     };
   }

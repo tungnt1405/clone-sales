@@ -118,9 +118,9 @@ export default {
             slick: {
                 arrows: false,
                 dots: false,
-                cssEase: "linear",
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 2000,
+                infinite: true,
             },
         };
     },

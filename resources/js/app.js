@@ -10,6 +10,7 @@ window.Vue = require("vue");
 import App from "./App.vue";
 import router from "./router";
 import vuetify from "./plugins/vuetify";
+import "./plugins/vue-slick";
 
 /**
  * The following block of code may be used to automatically register your

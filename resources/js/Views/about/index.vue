@@ -151,13 +151,19 @@
                         </v-container>
                     </v-row>
                 </div>
+                <div class="about__slick text-center section__gap">
+                    <about-component></about-component>
+                </div>
             </div>
         </v-col>
     </v-row>
 </template>
 
 <script>
-export default {};
+import AboutComponent from "../../components/about/AboutComponent.vue";
+export default {
+    components: { AboutComponent },
+};
 </script>
 
 <style></style>

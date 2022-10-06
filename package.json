@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "vue-router": "^3.5.3",
+        "vue-slick-carousel": "^1.0.6",
         "vuetify": "^2.6.10"
     }
 }

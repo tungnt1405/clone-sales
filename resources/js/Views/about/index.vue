@@ -154,6 +154,116 @@
                 <div class="about__slick text-center section__gap">
                     <about-component></about-component>
                 </div>
+                <div class="about__info section__gap blue-grey lighten-5">
+                    <div
+                        class="about__info-title text-center"
+                        style="
+                            font-size: 3rem;
+                            font-weight: bold;
+                            padding-bottom: 1em;
+                        "
+                    >
+                        Meet Our Crew
+                    </div>
+                    <v-row>
+                        <v-col cols="12" md="4">
+                            <div
+                                class="about__info-body d-flex justify-content-center"
+                            >
+                                <div class="align-items-center text-center">
+                                    <v-img
+                                        class="rounded-lg rounded-circle text-center mx-auto"
+                                        lazy-src="images/data/user-3.jpg"
+                                        src="images/data/user-3.jpg"
+                                        width="200"
+                                        contain
+                                    ></v-img>
+                                    <p>
+                                        <span
+                                            style="
+                                                font-size: 1.5rem;
+                                                font-weight: bold;
+                                            "
+                                            >Alexis Rive</span
+                                        >
+                                        <small>Sr. Supervisor</small>
+                                    </p>
+                                    <p class="mt-3">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Sit praesentium
+                                        ducimus incidunt rem facilis expedita
+                                        illo at tempore natus nihil veritatis
+                                        accusamus vel.
+                                    </p>
+                                </div>
+                            </div>
+                        </v-col>
+                        <v-col cols="12" md="4">
+                            <div
+                                class="about__info-body d-flex justify-content-center"
+                            >
+                                <div class="align-items-center text-center">
+                                    <v-img
+                                        class="rounded-lg rounded-circle text-center mx-auto"
+                                        lazy-src="images/data/user-3.jpg"
+                                        src="images/data/user-3.jpg"
+                                        width="200"
+                                        contain
+                                    ></v-img>
+                                    <p>
+                                        <span
+                                            style="
+                                                font-size: 1.5rem;
+                                                font-weight: bold;
+                                            "
+                                            >Alexis Rive</span
+                                        >
+                                        <small>Sr. Supervisor</small>
+                                    </p>
+                                    <p class="mt-3">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Sit praesentium
+                                        ducimus incidunt rem facilis expedita
+                                        illo at tempore natus nihil veritatis
+                                        accusamus vel.
+                                    </p>
+                                </div>
+                            </div>
+                        </v-col>
+                        <v-col cols="12" md="4">
+                            <div
+                                class="about__info-body d-flex justify-content-center"
+                            >
+                                <div class="align-items-center text-center">
+                                    <v-img
+                                        class="rounded-lg rounded-circle text-center mx-auto"
+                                        lazy-src="images/data/user-3.jpg"
+                                        src="images/data/user-3.jpg"
+                                        width="200"
+                                        contain
+                                    ></v-img>
+                                    <p>
+                                        <span
+                                            style="
+                                                font-size: 1.5rem;
+                                                font-weight: bold;
+                                            "
+                                            >Alexis Rive</span
+                                        >
+                                        <small>Sr. Supervisor</small>
+                                    </p>
+                                    <p class="mt-3">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Sit praesentium
+                                        ducimus incidunt rem facilis expedita
+                                        illo at tempore natus nihil veritatis
+                                        accusamus vel.
+                                    </p>
+                                </div>
+                            </div>
+                        </v-col>
+                    </v-row>
+                </div>
             </div>
         </v-col>
     </v-row>
@@ -166,4 +276,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.about__info-body p {
+    padding-top: 16px;
+}
+.about__info-body p span {
+    display: block;
+}
+.about__info-body p small {
+    padding: 0;
+    font-size: 13px;
+}
+</style>

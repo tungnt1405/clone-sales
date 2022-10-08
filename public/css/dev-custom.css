@@ -284,11 +284,11 @@ a:focus {
 
 @media only screen and (max-width: 64em) {
   .top-header .top-header--logo .v-image__image {
-    width: 140px;
+    width: 100px !important;
   }
 
   .top-header--logo .v-responsive__content {
-    width: 140px;
+    width: 100px !important;
   }
 
   .headers .header-wrap .top-header--wrap .top-header--notification > div,

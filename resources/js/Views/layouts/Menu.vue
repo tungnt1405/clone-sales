@@ -16,8 +16,8 @@
                                         contain
                                         :src="logo"
                                         :lazy-src="logo"
-                                        width="224"
-                                        height="34"
+                                        max-width="224"
+                                        cover
                                     ></v-img
                                 ></router-link>
                             </div>
@@ -185,7 +185,7 @@
         </div>
         <div class="fixedHeader" :class="{ menu__active: showMenuFixed }">
             <div class="fixed__header-wrap">
-                <div class="header-wrap primary px-4">
+                <div class="header-wrap primary" style="padding: 0">
                     <v-container class="grid-list-xl">
                         <div
                             class="layout align-center justify-space-between row ma-0"
@@ -196,8 +196,8 @@
                                         contain
                                         :src="logo"
                                         :lazy-src="logo"
-                                        width="224"
-                                        height="34"
+                                        max-width="224"
+                                        cover
                                     ></v-img
                                 ></router-link>
                             </div>
@@ -238,6 +238,7 @@
                                 <label
                                     for="nav__menu-sp"
                                     class="nav__menu-icon"
+                                    style="padding-right: 15px"
                                 >
                                     <v-icon color="white">mdi-menu</v-icon>
                                 </label>
@@ -311,4 +312,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped></style>

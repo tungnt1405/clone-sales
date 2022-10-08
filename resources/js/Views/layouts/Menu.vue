@@ -279,9 +279,9 @@ export default {
             ],
             menus: [
                 { path: "/", title: "Home" },
-                { path: "javascript:void(0)", title: "Shop" },
+                { path: "#", title: "Shop" },
                 {
-                    path: "javascript:void(0)",
+                    path: "#",
                     title: "Pages",
                     sub_menu: [
                         { path: "/about", title: "About" },

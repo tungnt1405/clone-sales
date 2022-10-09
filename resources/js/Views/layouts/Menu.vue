@@ -106,7 +106,7 @@
             <div class="bottom-header--wrap d-block primary">
                 <v-container>
                     <div class="position-relative">
-                        <div class="menu-alignment">
+                        <div class="menu-alignment" v-if="!isSearch">
                             <div class="text-center">
                                 <ul class="pl-0 app-nav-list">
                                     <li
@@ -136,7 +136,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <label for="nav__menu-sp" class="nav__menu-icon">
+                        <label
+                            for="nav__menu-sp"
+                            class="nav__menu-icon"
+                            v-if="!isSearch"
+                        >
                             <v-icon color="white">mdi-menu</v-icon>
                         </label>
                         <input type="checkbox" id="nav__menu-sp" hidden />
@@ -166,19 +170,68 @@
                                     <v-list-item dark link multiple>
                                         <v-list-item-title class="px-0 pl-2">
                                             <v-icon>mdi-home</v-icon>
-                                            Home</v-list-item-title
-                                        >
-                                        <v-list-item-action>
-                                            <v-list-item-icon
-                                                class="mr-0 pl-100"
+                                            <a
+                                                href="/"
+                                                class="white--text text-decoration-none"
+                                                >Home</a
                                             >
-                                                <v-icon>mdi-menu-down</v-icon>
+                                        </v-list-item-title>
+                                        <v-list-item-action>
+                                            <v-list-item-icon>
+                                                <v-icon class="float-right"
+                                                    >mdi-menu-down</v-icon
+                                                >
+                                            </v-list-item-icon>
+                                        </v-list-item-action>
+                                    </v-list-item>
+                                    <v-list-item dark link multiple>
+                                        <v-list-item-title class="px-0 pl-2">
+                                            <v-icon>mdi-home</v-icon>
+                                            <a
+                                                href="/about"
+                                                class="white--text text-decoration-none"
+                                                >about</a
+                                            >
+                                        </v-list-item-title>
+                                        <v-list-item-action>
+                                            <v-list-item-icon>
+                                                <v-icon class="float-right"
+                                                    >mdi-menu-down</v-icon
+                                                >
                                             </v-list-item-icon>
                                         </v-list-item-action>
                                     </v-list-item>
                                 </v-list-item-group>
                             </v-list-item-content>
                         </nav>
+                        <div>
+                            <div class="search-box">
+                                <v-btn
+                                    color="accent"
+                                    fab
+                                    small
+                                    class="btn__search-box"
+                                    @click="isSearch = true"
+                                    v-if="!isSearch"
+                                >
+                                    <v-icon>mdi-magnify</v-icon></v-btn
+                                >
+                            </div>
+                            <div class="search-form" v-if="isSearch">
+                                <v-form>
+                                    <v-text-field
+                                        placeholder="Search"
+                                        class="input__search"
+                                        hide-details="true"
+                                        solo
+                                    >
+                                    </v-text-field>
+                                    <v-btn @click="isSearch = false" depressed>
+                                        <v-icon>mdi-close</v-icon>
+                                    </v-btn>
+                                </v-form>
+                            </div>
+                        </div>
                     </div>
                 </v-container>
             </div>
@@ -258,6 +311,7 @@ export default {
     mixins: [breakpoints],
     data: () => {
         return {
+            isSearch: false,
             showMenuFixed: false,
             logo: "../images/common/logo.png",
             value: 1,
@@ -312,4 +366,47 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.search-box {
+    z-index: 5;
+    position: absolute;
+    text-align: center;
+    bottom: -31px;
+    right: 0;
+}
+.search-box .btn__search-box {
+    width: 40px;
+    height: 40px;
+}
+
+.search-form .v-form .v-btn {
+    position: absolute;
+    right: 2px;
+    bottom: 5px;
+    height: 40px;
+    background-color: #fff !important;
+    box-shadow: none;
+}
+.input__search {
+    padding: 0 1rem;
+    border: 0;
+    font-size: 2rem;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 9;
+    background-color: #fff !important;
+}
+.input__search:focus-within {
+    border: 3px solid rgb(168, 231, 114);
+}
+@media only screen and (max-width: 46.1875em) {
+    .search-box {
+        bottom: -5px;
+    }
+    .search-box .btn__search-box {
+        width: 35px;
+        height: 35px;
+    }
+}
+</style>

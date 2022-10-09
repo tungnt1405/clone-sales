@@ -169,7 +169,7 @@ a:focus {
   z-index: 10;
   background-image: url(/images/bg-sidebar.jpg?6fe4a92b0cab0e440d7d32989c28f4f1);
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 50%;
   background-size: cover;
   background-color: #424242;
   transform: translateX(-100%);
@@ -338,6 +338,12 @@ a:focus {
   .fixedHeader .nav__menu-icon {
     display: inline-block;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  #nav__menu-sp:checked ~ .nav__menu {
+    width: 100%;
   }
 }
 

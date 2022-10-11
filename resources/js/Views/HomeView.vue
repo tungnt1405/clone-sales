@@ -1,12 +1,10 @@
 <template>
-    <example-component></example-component>
+    <HomePage></HomePage>
 </template>
 
 <script>
-import ExampleComponent from "../components/ExampleComponent.vue";
-export default {
-    components: { ExampleComponent },
-};
+import HomePage from "../components/layout/HomePage.vue";
+export default { components: { HomePage } };
 </script>
 
 <style></style>

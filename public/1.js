@@ -73,23 +73,39 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("v-row", [_c("v-container", [_c("div", {
+  return _c("div", {
     staticClass: "banner"
-  }, [_c("v-col", {
-    attrs: {
-      cols: "12",
-      md: "6"
-    }
   }, [_c("div", {
-    staticClass: "banner__slide"
+    staticClass: "d-flex flex-column flex-md-row justify-between"
+  }, [_c("div", {
+    staticClass: "ml-md-5 px-5"
   }, [_c("v-img", {
+    staticClass: "banner__slide",
     attrs: {
       src: "images/data/slider-1.jpg",
-      "lazy-src": "images/data/slider-1.jpg",
-      "max-width": "1123",
+      "max-width": "1050",
       "max-height": "660"
     }
-  })], 1)])], 1)])], 1);
+  })], 1), _vm._v(" "), _c("div", {
+    staticClass: "d-flex flex-column justify-between px-5 px-md-0 mt-md-0 mt-5 mt-md-0",
+    staticStyle: {
+      gap: "10px"
+    }
+  }, [_c("v-img", {
+    staticClass: "emb-card",
+    attrs: {
+      src: "images/data/aside-1.jpg",
+      "max-width": "547",
+      "max-height": "315"
+    }
+  }), _vm._v(" "), _c("v-img", {
+    staticClass: "emb-card",
+    attrs: {
+      src: "images/data/aside-2.jpg",
+      "max-width": "547",
+      "max-height": "315"
+    }
+  })], 1)])]);
 };
 
 var staticRenderFns = [];

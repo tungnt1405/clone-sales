@@ -1,20 +1,33 @@
 <template>
-    <v-row>
-        <v-container>
-            <div class="banner">
-                <v-col cols="12" md="6">
-                    <div class="banner__slide">
-                        <v-img
-                            src="images/data/slider-1.jpg"
-                            lazy-src="images/data/slider-1.jpg"
-                            max-width="1123"
-                            max-height="660"
-                        ></v-img>
-                    </div>
-                </v-col>
+    <div class="banner">
+        <div class="d-flex flex-column flex-md-row justify-between">
+            <div class="ml-md-5 px-5">
+                <v-img
+                    src="images/data/slider-1.jpg"
+                    class="banner__slide"
+                    max-width="1050"
+                    max-height="660"
+                ></v-img>
             </div>
-        </v-container>
-    </v-row>
+            <div
+                class="d-flex flex-column justify-between px-5 px-md-0 mt-md-0 mt-5 mt-md-0"
+                style="gap: 10px"
+            >
+                <v-img
+                    src="images/data/aside-1.jpg"
+                    class="emb-card"
+                    max-width="547"
+                    max-height="315"
+                ></v-img>
+                <v-img
+                    src="images/data/aside-2.jpg"
+                    class="emb-card"
+                    max-width="547"
+                    max-height="315"
+                ></v-img>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>

@@ -46,6 +46,8 @@ a:hover, a:active, a:focus{
 .banner{
     padding-top: 6rem;
     padding-bottom: 6rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     .banner__slide{
         position: relative;
         margin-left: 1px;
@@ -62,6 +64,7 @@ a:hover, a:active, a:focus{
         box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
         border-radius: 5px;
         transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
+        margin-left: 2rem;
     }  
     
 }
@@ -303,6 +306,21 @@ a:hover, a:active, a:focus{
                     font-size: 2.2rem;
                 }
             }
+        }
+    }
+
+    .banner{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        flex-direction: column;
+
+        .banner__slide{
+            margin-bottom: 15px;
+        }
+        .emb-card{
+            margin-left: 0;
         }
     }
 }

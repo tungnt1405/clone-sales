@@ -1,11 +1,9 @@
 <template>
     <v-app id="inspire">
         <Menu />
-        <div>
-            <v-main>
-                <router-view></router-view>
-            </v-main>
-        </div>
+        <v-main>
+            <router-view></router-view>
+        </v-main>
     </v-app>
 </template>
 
@@ -14,4 +12,8 @@ import Menu from "./Views/layouts/Menu.vue";
 export default { components: { Menu } };
 </script>
 
-<style></style>
+<style scoped>
+.v-main {
+    background-color: #fafafa !important;
+}
+</style>

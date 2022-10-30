@@ -254,25 +254,29 @@ a:focus {
   font-weight: 400;
 }
 
-.about__content .section__gap {
+.section__gap {
   padding: 5rem 0;
 }
 
-.about__content .section__gap .section__gap-body {
+.section__gap.title__gap {
+  padding-top: 3.5rem;
+}
+
+.section__gap .section__gap-body {
   padding: 15px;
 }
 
-.about__content .section__gap .section__gap-body .section__gap-title h2 {
+.section__gap .section__gap-body .section__gap-title h2 {
   line-height: 1.1;
   font-size: 3.2rem;
 }
 
-.about__content .section__gap .section__gap-body .section__gap-title h3 {
+.section__gap .section__gap-body .section__gap-title h3 {
   line-height: 1.4;
   font-size: 1.5rem;
 }
 
-.about__content .section__gap .section__gap-body .section__gap-title p {
+.section__gap .section__gap-body .section__gap-title p {
   font-size: 0.875rem;
   line-height: 1.5rem;
 }

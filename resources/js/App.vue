@@ -1,9 +1,11 @@
 <template>
     <v-app id="inspire">
         <Menu />
-        <v-main>
-            <router-view></router-view>
-        </v-main>
+        <div>
+            <v-main>
+                <router-view></router-view>
+            </v-main>
+        </div>
     </v-app>
 </template>
 

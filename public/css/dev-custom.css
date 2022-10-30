@@ -333,22 +333,6 @@ a:focus {
     line-height: 1.1;
     font-size: 2.2rem;
   }
-
-  .banner {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    flex-direction: column;
-  }
-
-  .banner .banner__slide {
-    margin-bottom: 15px;
-  }
-
-  .banner .emb-card {
-    margin-left: 0;
-  }
 }
 
 @media only screen and (max-width: 46.1875em) {

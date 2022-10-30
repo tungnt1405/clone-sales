@@ -309,20 +309,20 @@ a:hover, a:active, a:focus{
         }
     }
 
-    .banner{
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        flex-direction: column;
+    // .banner{
+    //     margin-left: 0;
+    //     margin-right: 0;
+    //     padding-left: 1rem;
+    //     padding-right: 1rem;
+    //     flex-direction: column;
 
-        .banner__slide{
-            margin-bottom: 15px;
-        }
-        .emb-card{
-            margin-left: 0;
-        }
-    }
+    //     .banner__slide{
+    //         margin-bottom: 15px;
+    //     }
+    //     .emb-card{
+    //         margin-left: 0;
+    //     }
+    // }
 }
 //mobile css: < 740px
 @media only screen and (max-width: 46.1875em) {

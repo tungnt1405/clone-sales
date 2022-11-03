@@ -34,7 +34,37 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       tabs: null,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      slick: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        speed: 300,
+        responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        }, {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+      }
     };
   }
 });
@@ -121,10 +151,10 @@ var render = function render() {
   }, [_vm._v("Featured Products")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-bar__wrap text-center flex-column"
   }, [_c("div", {
-    staticClass: "py-5"
+    staticClass: "py-3"
   }, [_c("v-tabs", {
     attrs: {
-      "fixed-tabs": ""
+      centered: ""
     },
     model: {
       value: _vm.tabs,
@@ -133,16 +163,9 @@ var render = function render() {
       },
       expression: "tabs"
     }
-  }, [_c("v-tabs-slider"), _vm._v(" "), _vm._l(_vm.bar_wrap, function (val, index) {
-    return _c("v-tab", {
-      key: index,
-      attrs: {
-        href: "#mobile-tabs-5-" + (index + 1)
-      }
-    }, [_c("v-btn", {
-      staticClass: "d-inline-block"
-    }, [_vm._v("\n                            " + _vm._s(val) + "\n                        ")])], 1);
-  })], 2)], 1), _vm._v(" "), _c("div", [_c("v-tabs-items", {
+  }, [_c("v-tab", [_vm._v("Men")]), _vm._v(" "), _c("v-tab", [_vm._v("Women")]), _vm._v(" "), _c("v-tab", [_vm._v("gadgets")]), _vm._v(" "), _c("v-tab", [_vm._v("accessories")])], 1)], 1)]), _vm._v(" "), _c("div", {
+    staticClass: "tab-content"
+  }, [_c("v-tabs-items", {
     model: {
       value: _vm.tabs,
       callback: function callback($$v) {
@@ -150,22 +173,290 @@ var render = function render() {
       },
       expression: "tabs"
     }
-  }, _vm._l(4, function (i) {
+  }, _vm._l(4, function (n) {
     return _c("v-tab-item", {
-      key: i,
+      key: n
+    }, [_c("SlickCarousel", _vm._b({
+      staticClass: "slick__product"
+    }, "SlickCarousel", _vm.slick, false), [_c("div", [_c("v-card", {
+      staticClass: "my-3 mx-5",
       attrs: {
-        value: "mobile-tabs-5-" + i
+        "max-width": "400",
+        "max-height": "100%"
       }
-    }, [_c("v-card", {
+    }, [_c("v-img", {
       attrs: {
-        flat: ""
+        src: "images/data/1-item-a.jpg",
+        "lazy-src": "images/data/4-item-a.jpg",
+        "max-height": "800"
       }
-    }, [_c("v-card-text", {
-      domProps: {
-        textContent: _vm._s(_vm.text)
+    }), _vm._v(" "), _c("v-card-subtitle", {
+      staticClass: "pb-0"
+    }, [_c("h5", {
+      staticClass: "h5__title"
+    }, [_vm._v("Blue Jean")])]), _vm._v(" "), _c("v-card-text", {
+      staticClass: "d-flex justify-content-between my-3 flex-sm-column flex-md-row flex-lg-row"
+    }, [_c("div", {
+      staticClass: "accent--text feature__product-price"
+    }, [_vm._v("\n                                        $18.75\n                                    ")]), _vm._v(" "), _c("div", {
+      staticClass: "orange--text"
+    }, [_c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
       }
-    })], 1)], 1);
-  }), 1)], 1)])])], 1);
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
+      staticClass: "my-3 mx-5",
+      attrs: {
+        "max-width": "400",
+        "max-height": "100%"
+      }
+    }, [_c("v-img", {
+      attrs: {
+        src: "images/data/1-item-a.jpg",
+        "max-height": "800"
+      }
+    }), _vm._v(" "), _c("v-card-subtitle", {
+      staticClass: "pb-0"
+    }, [_c("h5", {
+      staticClass: "h5__title"
+    }, [_vm._v("Blue Jean")])]), _vm._v(" "), _c("v-card-text", {
+      staticClass: "d-flex justify-content-between my-3 flex-sm-column flex-md-row flex-lg-row"
+    }, [_c("div", {
+      staticClass: "accent--text feature__product-price"
+    }, [_vm._v("\n                                        $18.75\n                                    ")]), _vm._v(" "), _c("div", {
+      staticClass: "orange--text"
+    }, [_c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
+      staticClass: "my-3 mx-5",
+      attrs: {
+        "max-width": "400",
+        "max-height": "100%"
+      }
+    }, [_c("v-img", {
+      attrs: {
+        src: "images/data/1-item-a.jpg",
+        "max-height": "800"
+      }
+    }), _vm._v(" "), _c("v-card-subtitle", {
+      staticClass: "pb-0"
+    }, [_c("h5", {
+      staticClass: "h5__title"
+    }, [_vm._v("Blue Jean")])]), _vm._v(" "), _c("v-card-text", {
+      staticClass: "d-flex justify-content-between my-3 flex-sm-column flex-md-row flex-lg-row"
+    }, [_c("div", {
+      staticClass: "accent--text feature__product-price"
+    }, [_vm._v("\n                                        $18.75\n                                    ")]), _vm._v(" "), _c("div", {
+      staticClass: "orange--text"
+    }, [_c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
+      staticClass: "my-3 mx-5",
+      attrs: {
+        "max-width": "400",
+        "max-height": "100%"
+      }
+    }, [_c("v-img", {
+      attrs: {
+        src: "images/data/1-item-a.jpg",
+        "max-height": "800"
+      }
+    }), _vm._v(" "), _c("v-card-subtitle", {
+      staticClass: "pb-0"
+    }, [_c("h5", {
+      staticClass: "h5__title"
+    }, [_vm._v("Blue Jean")])]), _vm._v(" "), _c("v-card-text", {
+      staticClass: "d-flex justify-content-between my-3 flex-sm-column flex-md-row flex-lg-row"
+    }, [_c("div", {
+      staticClass: "accent--text feature__product-price"
+    }, [_vm._v("\n                                        $18.75\n                                    ")]), _vm._v(" "), _c("div", {
+      staticClass: "orange--text"
+    }, [_c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
+      staticClass: "my-3 mx-5",
+      attrs: {
+        "max-width": "400",
+        "max-height": "100%"
+      }
+    }, [_c("v-img", {
+      attrs: {
+        src: "images/data/1-item-a.jpg",
+        "max-height": "800"
+      }
+    }), _vm._v(" "), _c("v-card-subtitle", {
+      staticClass: "pb-0"
+    }, [_c("h5", {
+      staticClass: "h5__title"
+    }, [_vm._v("Blue Jean")])]), _vm._v(" "), _c("v-card-text", {
+      staticClass: "d-flex justify-content-between my-3 flex-sm-column flex-md-row flex-lg-row"
+    }, [_c("div", {
+      staticClass: "accent--text feature__product-price"
+    }, [_vm._v("\n                                        $18.75\n                                    ")]), _vm._v(" "), _c("div", {
+      staticClass: "orange--text"
+    }, [_c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
+      staticClass: "my-3 mx-5",
+      attrs: {
+        "max-width": "400",
+        "max-height": "100%"
+      }
+    }, [_c("v-img", {
+      attrs: {
+        src: "images/data/1-item-a.jpg",
+        "max-height": "800"
+      }
+    }), _vm._v(" "), _c("v-card-subtitle", {
+      staticClass: "pb-0"
+    }, [_c("h5", {
+      staticClass: "h5__title"
+    }, [_vm._v("Blue Jean")])]), _vm._v(" "), _c("v-card-text", {
+      staticClass: "d-flex justify-content-between my-3 flex-sm-column flex-md-row flex-lg-row"
+    }, [_c("div", {
+      staticClass: "accent--text feature__product-price"
+    }, [_vm._v("\n                                        $18.75\n                                    ")]), _vm._v(" "), _c("div", {
+      staticClass: "orange--text"
+    }, [_c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
+      attrs: {
+        color: "orange",
+        small: ""
+      }
+    }, [_vm._v("mdi-star")])], 1)])], 1)], 1)])], 1);
+  }), 1)], 1)])], 1);
 };
 
 var staticRenderFns = [];
@@ -384,7 +675,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nh2[data-v-5aa8fc0a],\r\nh2 a[data-v-5aa8fc0a] {\r\n    font-size: 2.813rem !important;\n}\n.section__gap .section__gap-title[data-v-5aa8fc0a] {\r\n    margin-bottom: 3rem;\n}\n.tab-bar__wrap[data-v-5aa8fc0a] {\r\n    overflow-x: hidden;\r\n    display: flex;\r\n    padding: 0 20px 35px;\r\n    margin: auto;\r\n    justify-content: center;\n}\n.feature-product__wrap\r\n    .tab-bar__wrap\r\n    .theme--light.v-btn[data-v-5aa8fc0a]:not(.v-btn--icon):not(.v-btn--flat) {\r\n    background-color: transparent;\n}\n.feature-product__wrap .tab-bar__wrap .v-btn[data-v-5aa8fc0a] {\r\n    box-shadow: none;\r\n    border-radius: 5px;\n}\r\n", ""]);
+exports.push([module.i, "\nh2[data-v-5aa8fc0a],\r\nh2 a[data-v-5aa8fc0a] {\r\n    font-size: 2.813rem !important;\n}\n.section__gap .section__gap-title[data-v-5aa8fc0a] {\r\n    margin-bottom: 3rem;\n}\n.tab-bar__wrap[data-v-5aa8fc0a] {\r\n    overflow-x: hidden;\r\n    display: flex;\r\n    padding: 0 20px 35px;\r\n    margin: auto;\r\n    justify-content: center;\n}\n.feature-product__wrap\r\n    .tab-bar__wrap\r\n    .theme--light.v-btn[data-v-5aa8fc0a]:not(.v-btn--icon):not(.v-btn--flat) {\r\n    background-color: transparent;\n}\n.feature-product__wrap .tab-bar__wrap .v-btn[data-v-5aa8fc0a] {\r\n    box-shadow: none;\r\n    border-radius: 5px;\n}\n.thumb-wrap[data-v-5aa8fc0a] {\r\n    position: relative;\n}\n.feature-product__wrap .emb-card .img[data-v-5aa8fc0a] {\r\n    border-radius: 5px 5px 0 0;\r\n    width: 100%;\n}\n.h5__title[data-v-5aa8fc0a] {\r\n    font-size: 1.25rem;\r\n    line-height: 1.4;\r\n    font-weight: 700;\r\n    color: rgba(0, 0, 0, 0.87);\n}\n.feature__product-price[data-v-5aa8fc0a] {\r\n    line-height: 1.4;\r\n    font-weight: 500;\r\n    font-size: 1rem;\n}\n.slick__product[data-v-5aa8fc0a] {\r\n    margin-bottom: 40px;\n}\n[data-v-5aa8fc0a] ul.slick-dots li button:before {\r\n    font-size: 10px !important;\n}\r\n", ""]);
 
 // exports
 
@@ -403,7 +694,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.banner[data-v-38c05078] {\r\n    padding-top: 6rem;\r\n    padding-bottom: 6rem;\n}\n.container.grid-list-xl .layout[data-v-38c05078]:only-child,\r\n.container.grid-list-xl :not(:only-child) .layout[data-v-38c05078]:first-child {\r\n    margin: -15px;\n}\n.banner__slide[data-v-38c05078] {\r\n    margin-left: 1px;\r\n    margin-top: 1px;\r\n    margin-right: 1px;\r\n    position: relative;\r\n    border-radius: 5px;\r\n    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 10%),\r\n        0 1px 5px 0 rgb(0 0 0 / 10%);\r\n    overflow: hidden;\n}\n.emb-aside-banner[data-v-38c05078] {\r\n    max-width: 100%;\n}\n.emb-card[data-v-38c05078] {\r\n    background-color: #fff;\r\n    border-radius: 5px;\r\n    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),\r\n        0 1px 5px 0 rgb(0 0 0 / 12%);\r\n    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.emb-feature__wrap[data-v-38c05078] {\r\n    overflow: hidden;\n}\n.emb-feature__wrap .feature-item[data-v-38c05078] {\r\n    border-right: 2px solid #eee;\n}\n.emb-feature__wrap .emb-feature__content .thumb-wrap[data-v-38c05078] {\r\n    margin-right: 1.25rem;\n}\nh1[data-v-38c05078],\r\nh2[data-v-38c05078],\r\nh3[data-v-38c05078],\r\nh4[data-v-38c05078],\r\nh5[data-v-38c05078],\r\nh6[data-v-38c05078] {\r\n    list-style: 1.4;\n}\n.emb-feature__wrap .emb-feature__content .features h6[data-v-38c05078] {\r\n    font-size: 11px;\n}\n.emb-feature__wrap .emb-feature__content .features h5[data-v-38c05078] {\r\n    font-size: 15px;\n}\n.emb-feature__wrap .emb-feature__content .features span[data-v-38c05078] {\r\n    font-size: 0.725rem;\n}\n@media only screen and (max-width: 78.9375em) {\n.banner .container.grid-list-xl .layout .d-flex[data-v-38c05078] {\r\n        padding: 15px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex[data-v-38c05078]:first-child {\r\n        padding-left: 0px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex[data-v-38c05078]:last-child {\r\n        padding-right: 0px !important;\n}\n.emb-card[data-v-38c05078]:first-child,\r\n    .emb-card[data-v-38c05078]:last-child {\r\n        margin-left: 0px !important;\n}\n}\n@media only screen and (max-width: 37.5em) {\n.banner .container.grid-list-xl .layout .d-flex[data-v-38c05078] {\r\n        padding: 15px 0 !important;\n}\n}\r\n", ""]);
+exports.push([module.i, "\n.container.grid-list-xl .layout[data-v-38c05078]:only-child,\r\n.container.grid-list-xl :not(:only-child) .layout[data-v-38c05078]:first-child {\r\n    margin: -15px;\n}\n@media only screen and (max-width: 78.9375em) {\n.banner .container.grid-list-xl .layout .d-flex[data-v-38c05078] {\r\n        padding: 15px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex[data-v-38c05078]:first-child {\r\n        padding-left: 0px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex[data-v-38c05078]:last-child {\r\n        padding-right: 0px !important;\n}\n.emb-card[data-v-38c05078]:first-child,\r\n    .emb-card[data-v-38c05078]:last-child {\r\n        margin-left: 0px !important;\n}\n}\n@media only screen and (max-width: 37.5em) {\n.banner .container.grid-list-xl .layout .d-flex[data-v-38c05078] {\r\n        padding: 15px 0 !important;\n}\n}\r\n", ""]);
 
 // exports
 

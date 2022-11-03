@@ -187,61 +187,9 @@ export default {
 </script>
 
 <style scoped>
-.banner {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
-
 .container.grid-list-xl .layout:only-child,
 .container.grid-list-xl :not(:only-child) .layout:first-child {
     margin: -15px;
-}
-.banner__slide {
-    margin-left: 1px;
-    margin-top: 1px;
-    margin-right: 1px;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 10%),
-        0 1px 5px 0 rgb(0 0 0 / 10%);
-    overflow: hidden;
-}
-.emb-aside-banner {
-    max-width: 100%;
-}
-.emb-card {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),
-        0 1px 5px 0 rgb(0 0 0 / 12%);
-    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.emb-feature__wrap {
-    overflow: hidden;
-}
-.emb-feature__wrap .feature-item {
-    border-right: 2px solid #eee;
-}
-.emb-feature__wrap .emb-feature__content .thumb-wrap {
-    margin-right: 1.25rem;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    list-style: 1.4;
-}
-
-.emb-feature__wrap .emb-feature__content .features h6 {
-    font-size: 11px;
-}
-.emb-feature__wrap .emb-feature__content .features h5 {
-    font-size: 15px;
-}
-.emb-feature__wrap .emb-feature__content .features span {
-    font-size: 0.725rem;
 }
 @media only screen and (max-width: 78.9375em) {
     .banner .container.grid-list-xl .layout .d-flex {

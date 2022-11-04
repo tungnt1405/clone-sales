@@ -47,18 +47,20 @@ __webpack_require__.r(__webpack_exports__);
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        }, {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
           }
         }, {
           breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }, {
-          breakpoint: 480,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -179,18 +181,33 @@ var render = function render() {
     }, [_c("SlickCarousel", _vm._b({
       staticClass: "slick__product"
     }, "SlickCarousel", _vm.slick, false), [_c("div", [_c("v-card", {
-      staticClass: "my-3 mx-5",
+      staticClass: "my-3 mx-5 card__product",
       attrs: {
-        "max-width": "400",
         "max-height": "100%"
       }
     }, [_c("v-img", {
+      staticClass: "grey--text",
       attrs: {
         src: "images/data/1-item-a.jpg",
         "lazy-src": "images/data/4-item-a.jpg",
         "max-height": "800"
       }
-    }), _vm._v(" "), _c("v-card-subtitle", {
+    }, [_c("v-card-title", {
+      staticClass: "d-flex justify-content-end"
+    }, [_c("v-btn", {
+      attrs: {
+        icon: ""
+      }
+    }, [_c("v-icon", [_vm._v("mdi-heart")])], 1)], 1)], 1), _vm._v(" "), _c("div", {
+      staticClass: "add__to-cart"
+    }, [_c("v-btn", {
+      attrs: {
+        color: "accent",
+        fab: "",
+        depressed: "",
+        small: ""
+      }
+    }, [_c("v-icon", [_vm._v("mdi-cart")])], 1)], 1), _vm._v(" "), _c("v-card-subtitle", {
       staticClass: "pb-0"
     }, [_c("h5", {
       staticClass: "h5__title"
@@ -226,17 +243,33 @@ var render = function render() {
         small: ""
       }
     }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
-      staticClass: "my-3 mx-5",
+      staticClass: "my-3 mx-5 card__product",
       attrs: {
-        "max-width": "400",
         "max-height": "100%"
       }
     }, [_c("v-img", {
+      staticClass: "grey--text",
       attrs: {
         src: "images/data/1-item-a.jpg",
+        "lazy-src": "images/data/4-item-a.jpg",
         "max-height": "800"
       }
-    }), _vm._v(" "), _c("v-card-subtitle", {
+    }, [_c("v-card-title", {
+      staticClass: "d-flex justify-content-end"
+    }, [_c("v-btn", {
+      attrs: {
+        icon: ""
+      }
+    }, [_c("v-icon", [_vm._v("mdi-heart")])], 1)], 1)], 1), _vm._v(" "), _c("div", {
+      staticClass: "add__to-cart"
+    }, [_c("v-btn", {
+      attrs: {
+        color: "accent",
+        fab: "",
+        depressed: "",
+        small: ""
+      }
+    }, [_c("v-icon", [_vm._v("mdi-cart")])], 1)], 1), _vm._v(" "), _c("v-card-subtitle", {
       staticClass: "pb-0"
     }, [_c("h5", {
       staticClass: "h5__title"
@@ -272,17 +305,33 @@ var render = function render() {
         small: ""
       }
     }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
-      staticClass: "my-3 mx-5",
+      staticClass: "my-3 mx-5 card__product",
       attrs: {
-        "max-width": "400",
         "max-height": "100%"
       }
     }, [_c("v-img", {
+      staticClass: "grey--text",
       attrs: {
         src: "images/data/1-item-a.jpg",
+        "lazy-src": "images/data/4-item-a.jpg",
         "max-height": "800"
       }
-    }), _vm._v(" "), _c("v-card-subtitle", {
+    }, [_c("v-card-title", {
+      staticClass: "d-flex justify-content-end"
+    }, [_c("v-btn", {
+      attrs: {
+        icon: ""
+      }
+    }, [_c("v-icon", [_vm._v("mdi-heart")])], 1)], 1)], 1), _vm._v(" "), _c("div", {
+      staticClass: "add__to-cart"
+    }, [_c("v-btn", {
+      attrs: {
+        color: "accent",
+        fab: "",
+        depressed: "",
+        small: ""
+      }
+    }, [_c("v-icon", [_vm._v("mdi-cart")])], 1)], 1), _vm._v(" "), _c("v-card-subtitle", {
       staticClass: "pb-0"
     }, [_c("h5", {
       staticClass: "h5__title"
@@ -318,17 +367,33 @@ var render = function render() {
         small: ""
       }
     }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
-      staticClass: "my-3 mx-5",
+      staticClass: "my-3 mx-5 card__product",
       attrs: {
-        "max-width": "400",
         "max-height": "100%"
       }
     }, [_c("v-img", {
+      staticClass: "grey--text",
       attrs: {
         src: "images/data/1-item-a.jpg",
+        "lazy-src": "images/data/4-item-a.jpg",
         "max-height": "800"
       }
-    }), _vm._v(" "), _c("v-card-subtitle", {
+    }, [_c("v-card-title", {
+      staticClass: "d-flex justify-content-end"
+    }, [_c("v-btn", {
+      attrs: {
+        icon: ""
+      }
+    }, [_c("v-icon", [_vm._v("mdi-heart")])], 1)], 1)], 1), _vm._v(" "), _c("div", {
+      staticClass: "add__to-cart"
+    }, [_c("v-btn", {
+      attrs: {
+        color: "accent",
+        fab: "",
+        depressed: "",
+        small: ""
+      }
+    }, [_c("v-icon", [_vm._v("mdi-cart")])], 1)], 1), _vm._v(" "), _c("v-card-subtitle", {
       staticClass: "pb-0"
     }, [_c("h5", {
       staticClass: "h5__title"
@@ -364,63 +429,33 @@ var render = function render() {
         small: ""
       }
     }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
-      staticClass: "my-3 mx-5",
+      staticClass: "my-3 mx-5 card__product",
       attrs: {
-        "max-width": "400",
         "max-height": "100%"
       }
     }, [_c("v-img", {
+      staticClass: "grey--text",
       attrs: {
         src: "images/data/1-item-a.jpg",
+        "lazy-src": "images/data/4-item-a.jpg",
         "max-height": "800"
       }
-    }), _vm._v(" "), _c("v-card-subtitle", {
-      staticClass: "pb-0"
-    }, [_c("h5", {
-      staticClass: "h5__title"
-    }, [_vm._v("Blue Jean")])]), _vm._v(" "), _c("v-card-text", {
-      staticClass: "d-flex justify-content-between my-3 flex-sm-column flex-md-row flex-lg-row"
-    }, [_c("div", {
-      staticClass: "accent--text feature__product-price"
-    }, [_vm._v("\n                                        $18.75\n                                    ")]), _vm._v(" "), _c("div", {
-      staticClass: "orange--text"
-    }, [_c("v-icon", {
+    }, [_c("v-card-title", {
+      staticClass: "d-flex justify-content-end"
+    }, [_c("v-btn", {
       attrs: {
-        color: "orange",
+        icon: ""
+      }
+    }, [_c("v-icon", [_vm._v("mdi-heart")])], 1)], 1)], 1), _vm._v(" "), _c("div", {
+      staticClass: "add__to-cart"
+    }, [_c("v-btn", {
+      attrs: {
+        color: "accent",
+        fab: "",
+        depressed: "",
         small: ""
       }
-    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
-      attrs: {
-        color: "orange",
-        small: ""
-      }
-    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
-      attrs: {
-        color: "orange",
-        small: ""
-      }
-    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
-      attrs: {
-        color: "orange",
-        small: ""
-      }
-    }, [_vm._v("mdi-star")]), _vm._v(" "), _c("v-icon", {
-      attrs: {
-        color: "orange",
-        small: ""
-      }
-    }, [_vm._v("mdi-star")])], 1)])], 1)], 1), _vm._v(" "), _c("div", [_c("v-card", {
-      staticClass: "my-3 mx-5",
-      attrs: {
-        "max-width": "400",
-        "max-height": "100%"
-      }
-    }, [_c("v-img", {
-      attrs: {
-        src: "images/data/1-item-a.jpg",
-        "max-height": "800"
-      }
-    }), _vm._v(" "), _c("v-card-subtitle", {
+    }, [_c("v-icon", [_vm._v("mdi-cart")])], 1)], 1), _vm._v(" "), _c("v-card-subtitle", {
       staticClass: "pb-0"
     }, [_c("h5", {
       staticClass: "h5__title"
@@ -675,7 +710,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nh2[data-v-5aa8fc0a],\r\nh2 a[data-v-5aa8fc0a] {\r\n    font-size: 2.813rem !important;\n}\n.section__gap .section__gap-title[data-v-5aa8fc0a] {\r\n    margin-bottom: 3rem;\n}\n.tab-bar__wrap[data-v-5aa8fc0a] {\r\n    overflow-x: hidden;\r\n    display: flex;\r\n    padding: 0 20px 35px;\r\n    margin: auto;\r\n    justify-content: center;\n}\n.feature-product__wrap\r\n    .tab-bar__wrap\r\n    .theme--light.v-btn[data-v-5aa8fc0a]:not(.v-btn--icon):not(.v-btn--flat) {\r\n    background-color: transparent;\n}\n.feature-product__wrap .tab-bar__wrap .v-btn[data-v-5aa8fc0a] {\r\n    box-shadow: none;\r\n    border-radius: 5px;\n}\n.thumb-wrap[data-v-5aa8fc0a] {\r\n    position: relative;\n}\n.feature-product__wrap .emb-card .img[data-v-5aa8fc0a] {\r\n    border-radius: 5px 5px 0 0;\r\n    width: 100%;\n}\n.h5__title[data-v-5aa8fc0a] {\r\n    font-size: 1.25rem;\r\n    line-height: 1.4;\r\n    font-weight: 700;\r\n    color: rgba(0, 0, 0, 0.87);\n}\n.feature__product-price[data-v-5aa8fc0a] {\r\n    line-height: 1.4;\r\n    font-weight: 500;\r\n    font-size: 1rem;\n}\n.slick__product[data-v-5aa8fc0a] {\r\n    margin-bottom: 40px;\n}\n[data-v-5aa8fc0a] ul.slick-dots li button:before {\r\n    font-size: 10px !important;\n}\r\n", ""]);
+exports.push([module.i, "\nh2[data-v-5aa8fc0a],\r\nh2 a[data-v-5aa8fc0a] {\r\n    font-size: 2.813rem !important;\n}\n.section__gap .section__gap-title[data-v-5aa8fc0a] {\r\n    margin-bottom: 3rem;\n}\n.tab-bar__wrap[data-v-5aa8fc0a] {\r\n    overflow-x: hidden;\r\n    display: flex;\r\n    padding: 0 20px 35px;\r\n    margin: auto;\r\n    justify-content: center;\n}\n.feature-product__wrap\r\n    .tab-bar__wrap\r\n    .theme--light.v-btn[data-v-5aa8fc0a]:not(.v-btn--icon):not(.v-btn--flat) {\r\n    background-color: transparent;\n}\n.feature-product__wrap .tab-bar__wrap .v-btn[data-v-5aa8fc0a] {\r\n    box-shadow: none;\r\n    border-radius: 5px;\n}\n.thumb-wrap[data-v-5aa8fc0a] {\r\n    position: relative;\n}\n.feature-product__wrap .emb-card .img[data-v-5aa8fc0a] {\r\n    border-radius: 5px 5px 0 0;\r\n    width: 100%;\n}\n.h5__title[data-v-5aa8fc0a] {\r\n    font-size: 1.25rem;\r\n    line-height: 1.4;\r\n    font-weight: 700;\r\n    color: rgba(0, 0, 0, 0.87);\n}\n.feature__product-price[data-v-5aa8fc0a] {\r\n    line-height: 1.4;\r\n    font-weight: 500;\r\n    font-size: 1rem;\n}\n.slick__product[data-v-5aa8fc0a] {\r\n    margin-bottom: 40px;\n}\n.card__product .v-image[data-v-5aa8fc0a] {\r\n    cursor: pointer;\n}\n.add__to-cart .v-btn[data-v-5aa8fc0a] {\r\n    position: absolute;\r\n    right: 10px;\r\n    bottom: 70px;\r\n    line-height: 5.125rem;\r\n    transition: 0.4s ease-in;\r\n    margin: 0;\r\n    height: 3.4rem;\r\n    width: 3.4rem;\r\n    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),\r\n        0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 8px 0 rgba(0, 0, 0, 0.12);\n}\n.card__product:hover .add__to-cart .v-btn[data-v-5aa8fc0a] {\r\n    transform: translateY(-20px);\n}\n[data-v-5aa8fc0a] ul.slick-dots li button:before {\r\n    font-size: 10px !important;\n}\n@media screen and (min-width: 600px) and (max-width: 959px) {\n.add__to-cart .v-btn[data-v-5aa8fc0a] {\r\n        bottom: 84px !important;\n}\n}\r\n", ""]);
 
 // exports
 

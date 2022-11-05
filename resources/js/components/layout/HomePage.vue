@@ -163,13 +163,15 @@
             </v-container>
         </div>
         <Featured_Products :bar_wrap="bar_wrap"></Featured_Products>
+        <Day_Deal></Day_Deal>
     </div>
 </template>
 
 <script>
+import Day_Deal from "./Day_Deal.vue";
 import Featured_Products from "./Featured_Products.vue";
 export default {
-    components: { Featured_Products },
+    components: { Featured_Products, Day_Deal },
     name: "HomeComponent",
     data: () => {
         return {
@@ -186,7 +188,20 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+h2,
+h2 a {
+    font-size: 2.813rem !important;
+}
+h5 {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    line-height: 1.4;
+}
+h5,
+h5 a {
+    font-size: 1.25rem;
+}
 .container.grid-list-xl .layout:only-child,
 .container.grid-list-xl :not(:only-child) .layout:first-child {
     margin: -15px;

@@ -391,10 +391,6 @@ export default {
 </script>
 
 <style scoped>
-h2,
-h2 a {
-    font-size: 2.813rem !important;
-}
 .section__gap .section__gap-title {
     margin-bottom: 3rem;
 }

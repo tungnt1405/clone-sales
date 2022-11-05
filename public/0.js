@@ -32,7 +32,7 @@ __webpack_require__.r(__webpack_exports__);
   name: "day-deal",
   data: function data() {
     return {
-      countDownDate: new Date("Nov 6, 2022 14:00:00").getTime(),
+      countDownDate: new Date("Nov 6, 2022 00:00:00").getTime(),
       countDown: {
         countDays: 0,
         countHours: 0,
@@ -249,6 +249,7 @@ var render = function render() {
   }, [_c("v-row", {
     staticClass: "layout wrap"
   }, [_c("v-col", {
+    staticClass: "galivery",
     attrs: {
       xs: "12",
       sm: "12",
@@ -269,8 +270,8 @@ var render = function render() {
   }, [_c("v-img", {
     attrs: {
       src: "images/data/1-item-a.jpg",
-      "max-width": "900",
-      "max-height": "800"
+      "max-width": "900px",
+      "max-height": "800px"
     }
   })], 1), _vm._v(" "), _c("router-link", {
     attrs: {
@@ -279,8 +280,8 @@ var render = function render() {
   }, [_c("v-img", {
     attrs: {
       src: "images/data/2-item-a.jpg",
-      "max-width": "900",
-      "max-height": "800"
+      "max-width": "900px",
+      "max-height": "800px"
     }
   })], 1), _vm._v(" "), _c("router-link", {
     attrs: {
@@ -289,8 +290,8 @@ var render = function render() {
   }, [_c("v-img", {
     attrs: {
       src: "images/data/3-item-a.jpg",
-      "max-width": "900",
-      "max-height": "800"
+      "max-width": "900px",
+      "max-height": "800px"
     }
   })], 1), _vm._v(" "), _c("router-link", {
     attrs: {
@@ -299,8 +300,8 @@ var render = function render() {
   }, [_c("v-img", {
     attrs: {
       src: "images/data/4-item-a.jpg",
-      "max-width": "900",
-      "max-height": "800"
+      "max-width": "900px",
+      "max-height": "800px"
     }
   })], 1)], 1)], 1), _vm._v(" "), _c("v-col", {
     attrs: {
@@ -965,7 +966,97 @@ var render = function render() {
     attrs: {
       bar_wrap: _vm.bar_wrap
     }
-  }), _vm._v(" "), _c("Day_Deal")], 1);
+  }), _vm._v(" "), _c("Day_Deal"), _vm._v(" "), _c("div", {
+    staticClass: "emb-detailOffer-wrap"
+  }, [_c("div", {
+    staticClass: "off-list"
+  }, [_c("v-row", {
+    staticClass: "layout wrap"
+  }, [_c("v-col", {
+    staticClass: "detailOffer",
+    attrs: {
+      sm: "12",
+      md: "12",
+      xs: "12",
+      lg: "4",
+      xl: "4"
+    }
+  }, [_c("router-link", {
+    attrs: {
+      to: "#"
+    }
+  }, [_c("div", {
+    staticClass: "overlay-wrap position-relative"
+  }, [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_c("v-img", {
+    staticClass: "w-100",
+    attrs: {
+      src: "images/data/3-item-a.jpg",
+      "max-width": "100%",
+      "max-height": "345"
+    }
+  })], 1)])]), _vm._v(" "), _c("div", {
+    staticClass: "overlay-content primary-rgba"
+  }, [_c("div", [_c("h2", [_vm._v("Sale")]), _vm._v(" "), _c("h5", [_vm._v("Women collection")]), _vm._v(" "), _c("h3", [_vm._v("50% Off")])])])], 1), _vm._v(" "), _c("v-col", {
+    staticClass: "detailOffer",
+    attrs: {
+      sm: "12",
+      md: "12",
+      xs: "12",
+      lg: "4",
+      xl: "4"
+    }
+  }, [_c("router-link", {
+    attrs: {
+      to: "#"
+    }
+  }, [_c("div", {
+    staticClass: "overlay-wrap position-relative"
+  }, [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_c("v-img", {
+    staticClass: "w-100",
+    attrs: {
+      src: "images/data/4-item-a.jpg",
+      "max-width": "100%",
+      "max-height": "345"
+    }
+  })], 1)])]), _vm._v(" "), _c("div", {
+    staticClass: "overlay-content primary-rgba"
+  }, [_c("div", [_c("h2", [_vm._v("Sale")]), _vm._v(" "), _c("h5", [_vm._v("Women collection")]), _vm._v(" "), _c("h3", [_vm._v("50% Off")])])])], 1), _vm._v(" "), _c("v-col", {
+    staticClass: "detailOffer",
+    attrs: {
+      sm: "12",
+      md: "12",
+      xs: "12",
+      lg: "4",
+      xl: "4"
+    }
+  }, [_c("router-link", {
+    attrs: {
+      to: "#"
+    }
+  }, [_c("div", {
+    staticClass: "overlay-wrap position-relative"
+  }, [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_c("v-img", {
+    staticClass: "w-100",
+    attrs: {
+      src: "images/data/2-item-a.jpg",
+      "max-width": "100%",
+      "max-height": "345"
+    }
+  })], 1)])]), _vm._v(" "), _c("div", {
+    staticClass: "overlay-content primary-rgba"
+  }, [_c("div", [_c("h2", [_vm._v("Sale")]), _vm._v(" "), _c("h5", [_vm._v("Women collection")]), _vm._v(" "), _c("h3", [_vm._v("50% Off")])])])], 1)], 1)], 1)])], 1);
 };
 
 var staticRenderFns = [];
@@ -986,7 +1077,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.img__list[data-v-4b01e98e] {\r\n    cursor: pointer;\r\n    padding: 15px;\n}\n.day-deal-wrap .counter-item[data-v-4b01e98e] {\r\n    display: inline-block;\r\n    margin-right: 15px;\n}\n.day-deal-wrap span.counter-digit[data-v-4b01e98e] {\r\n    font-size: 3.25rem;\r\n    line-height: 1.5;\n}\n.btn-shop[data-v-4b01e98e] {\r\n    font-family: Roboto, sans-serif, sans-serif;\r\n    font-size: 13px;\r\n    font-weight: 500;\r\n    text-transform: capitalize;\r\n    padding: 5px;\r\n    text-decoration: none;\n}\r\n", ""]);
+exports.push([module.i, "\n.img__list[data-v-4b01e98e] {\r\n    cursor: pointer;\r\n    padding: 15px;\n}\n.day-deal-wrap .counter-item[data-v-4b01e98e] {\r\n    display: inline-block;\r\n    margin-right: 15px;\n}\n.day-deal-wrap span.counter-digit[data-v-4b01e98e] {\r\n    font-size: 3.25rem;\r\n    line-height: 1.5;\n}\n.btn-shop[data-v-4b01e98e] {\r\n    font-family: Roboto, sans-serif, sans-serif;\r\n    font-size: 13px;\r\n    font-weight: 500;\r\n    text-transform: capitalize;\r\n    padding: 5px;\r\n    text-decoration: none;\n}\n.slider-for[data-v-4b01e98e] {\r\n    cursor: pointer;\r\n    pointer-events: none;\n}\n.galivery[data-v-4b01e98e] {\r\n    max-height: 900px;\n}\r\n", ""]);
 
 // exports
 
@@ -1024,7 +1115,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nh2,\r\nh2 a {\r\n    font-size: 2.813rem !important;\n}\nh5 {\r\n    margin-bottom: 0.5rem;\r\n    margin-top: 0;\r\n    line-height: 1.4;\n}\nh5,\r\nh5 a {\r\n    font-size: 1.25rem;\n}\n.container.grid-list-xl .layout:only-child,\r\n.container.grid-list-xl :not(:only-child) .layout:first-child {\r\n    margin: -15px;\n}\n@media only screen and (max-width: 78.9375em) {\n.banner .container.grid-list-xl .layout .d-flex {\r\n        padding: 15px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex:first-child {\r\n        padding-left: 0px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex:last-child {\r\n        padding-right: 0px !important;\n}\n.emb-card:first-child,\r\n    .emb-card:last-child {\r\n        margin-left: 0px !important;\n}\n}\n@media only screen and (max-width: 37.5em) {\n.banner .container.grid-list-xl .layout .d-flex {\r\n        padding: 15px 0 !important;\n}\n}\r\n", ""]);
+exports.push([module.i, "\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    margin-bottom: 0.5rem;\r\n    margin-top: 0;\n}\nh2,\r\nh2 a {\r\n    font-size: 2.813rem !important;\n}\nh5 {\r\n    line-height: 1.4;\n}\nh5,\r\nh5 a {\r\n    font-size: 1.25rem;\n}\n.container.grid-list-xl .layout:only-child,\r\n.container.grid-list-xl :not(:only-child) .layout:first-child {\r\n    margin: -15px;\n}\n.detailOffer {\r\n    padding: 0 0 12px 0;\n}\n.overlay-content {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    text-align: center;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.overlay-wrap,\r\n.overlay-content * {\r\n    color: #fff;\n}\n.primary-rgba h2,\r\n.primary-rgba h5,\r\n.primary-rgba h3 {\r\n    line-height: 1;\n}\n.primary-rgba h2 {\r\n    font-weight: 900;\r\n    font-size: 6rem !important;\r\n    font-style: italic;\n}\n.primary-rgba h3 {\r\n    font-weight: bold;\n}\n.primary-rgba h5 {\r\n    letter-spacing: 2px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\n}\n@media only screen and (max-width: 78.9375em) {\n.banner .container.grid-list-xl .layout .d-flex {\r\n        padding: 15px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex:first-child {\r\n        padding-left: 0px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex:last-child {\r\n        padding-right: 0px !important;\n}\n.emb-card:first-child,\r\n    .emb-card:last-child {\r\n        margin-left: 0px !important;\n}\n.detailOffer {\r\n        padding: 0 !important;\n}\n}\n@media only screen and (max-width: 37.5em) {\n.banner .container.grid-list-xl .layout .d-flex {\r\n        padding: 15px 0 !important;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -1194,15 +1285,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*****************************************************!*\
   !*** ./resources/js/components/layout/Day_Deal.vue ***!
   \*****************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Day_Deal_vue_vue_type_template_id_4b01e98e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Day_Deal.vue?vue&type=template&id=4b01e98e&scoped=true& */ "./resources/js/components/layout/Day_Deal.vue?vue&type=template&id=4b01e98e&scoped=true&");
 /* harmony import */ var _Day_Deal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Day_Deal.vue?vue&type=script&lang=js& */ "./resources/js/components/layout/Day_Deal.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Day_Deal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Day_Deal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _Day_Deal_vue_vue_type_style_index_0_id_4b01e98e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Day_Deal.vue?vue&type=style&index=0&id=4b01e98e&scoped=true&lang=css& */ "./resources/js/components/layout/Day_Deal.vue?vue&type=style&index=0&id=4b01e98e&scoped=true&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Day_Deal_vue_vue_type_style_index_0_id_4b01e98e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Day_Deal.vue?vue&type=style&index=0&id=4b01e98e&scoped=true&lang=css& */ "./resources/js/components/layout/Day_Deal.vue?vue&type=style&index=0&id=4b01e98e&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1234,7 +1324,7 @@ component.options.__file = "resources/js/components/layout/Day_Deal.vue"
 /*!******************************************************************************!*\
   !*** ./resources/js/components/layout/Day_Deal.vue?vue&type=script&lang=js& ***!
   \******************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

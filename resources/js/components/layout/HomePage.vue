@@ -164,6 +164,96 @@
         </div>
         <Featured_Products :bar_wrap="bar_wrap"></Featured_Products>
         <Day_Deal></Day_Deal>
+        <div class="emb-detailOffer-wrap">
+            <div class="off-list">
+                <v-row class="layout wrap">
+                    <v-col
+                        sm="12"
+                        md="12"
+                        xs="12"
+                        lg="4"
+                        xl="4"
+                        class="detailOffer"
+                    >
+                        <router-link to="#">
+                            <div class="overlay-wrap position-relative">
+                                <a href="#">
+                                    <v-img
+                                        src="images/data/3-item-a.jpg"
+                                        class="w-100"
+                                        max-width="100%"
+                                        max-height="345"
+                                    ></v-img>
+                                </a>
+                            </div>
+                        </router-link>
+                        <div class="overlay-content primary-rgba">
+                            <div>
+                                <h2>Sale</h2>
+                                <h5>Women collection</h5>
+                                <h3>50% Off</h3>
+                            </div>
+                        </div>
+                    </v-col>
+                    <v-col
+                        sm="12"
+                        md="12"
+                        xs="12"
+                        lg="4"
+                        xl="4"
+                        class="detailOffer"
+                    >
+                        <router-link to="#">
+                            <div class="overlay-wrap position-relative">
+                                <a href="#">
+                                    <v-img
+                                        src="images/data/4-item-a.jpg"
+                                        class="w-100"
+                                        max-width="100%"
+                                        max-height="345"
+                                    ></v-img>
+                                </a>
+                            </div>
+                        </router-link>
+                        <div class="overlay-content primary-rgba">
+                            <div>
+                                <h2>Sale</h2>
+                                <h5>Women collection</h5>
+                                <h3>50% Off</h3>
+                            </div>
+                        </div>
+                    </v-col>
+                    <v-col
+                        sm="12"
+                        md="12"
+                        xs="12"
+                        lg="4"
+                        xl="4"
+                        class="detailOffer"
+                    >
+                        <router-link to="#">
+                            <div class="overlay-wrap position-relative">
+                                <a href="#">
+                                    <v-img
+                                        src="images/data/2-item-a.jpg"
+                                        class="w-100"
+                                        max-width="100%"
+                                        max-height="345"
+                                    ></v-img>
+                                </a>
+                            </div>
+                        </router-link>
+                        <div class="overlay-content primary-rgba">
+                            <div>
+                                <h2>Sale</h2>
+                                <h5>Women collection</h5>
+                                <h3>50% Off</h3>
+                            </div>
+                        </div>
+                    </v-col>
+                </v-row>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -189,13 +279,20 @@ export default {
 </script>
 
 <style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
 h2,
 h2 a {
     font-size: 2.813rem !important;
 }
 h5 {
-    margin-bottom: 0.5rem;
-    margin-top: 0;
     line-height: 1.4;
 }
 h5,
@@ -205,6 +302,42 @@ h5 a {
 .container.grid-list-xl .layout:only-child,
 .container.grid-list-xl :not(:only-child) .layout:first-child {
     margin: -15px;
+}
+.detailOffer {
+    padding: 0 0 12px 0;
+}
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay-wrap,
+.overlay-content * {
+    color: #fff;
+}
+.primary-rgba h2,
+.primary-rgba h5,
+.primary-rgba h3 {
+    line-height: 1;
+}
+.primary-rgba h2 {
+    font-weight: 900;
+    font-size: 6rem !important;
+    font-style: italic;
+}
+.primary-rgba h3 {
+    font-weight: bold;
+}
+.primary-rgba h5 {
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 @media only screen and (max-width: 78.9375em) {
     .banner .container.grid-list-xl .layout .d-flex {
@@ -219,6 +352,9 @@ h5 a {
     .emb-card:first-child,
     .emb-card:last-child {
         margin-left: 0px !important;
+    }
+    .detailOffer {
+        padding: 0 !important;
     }
 }
 @media only screen and (max-width: 37.5em) {

@@ -2,7 +2,7 @@
     <div class="day-deal-wrap white section__gap">
         <v-container class="grid-list-xl pb-0">
             <v-row class="layout wrap">
-                <v-col xs="12" sm="12" md="6" lg="6" xl="6">
+                <v-col xs="12" sm="12" md="6" lg="6" xl="6" class="galivery">
                     <SlickCarousel
                         ref="c1"
                         v-bind="slider_for"
@@ -12,29 +12,29 @@
                         <router-link to="#">
                             <v-img
                                 src="images/data/1-item-a.jpg"
-                                max-width="900"
-                                max-height="800"
+                                max-width="900px"
+                                max-height="800px"
                             ></v-img>
                         </router-link>
                         <router-link to="#">
                             <v-img
                                 src="images/data/2-item-a.jpg"
-                                max-width="900"
-                                max-height="800"
+                                max-width="900px"
+                                max-height="800px"
                             ></v-img>
                         </router-link>
                         <router-link to="#">
                             <v-img
                                 src="images/data/3-item-a.jpg"
-                                max-width="900"
-                                max-height="800"
+                                max-width="900px"
+                                max-height="800px"
                             ></v-img>
                         </router-link>
                         <router-link to="#">
                             <v-img
                                 src="images/data/4-item-a.jpg"
-                                max-width="900"
-                                max-height="800"
+                                max-width="900px"
+                                max-height="800px"
                             ></v-img>
                         </router-link>
                     </SlickCarousel>
@@ -163,7 +163,7 @@ export default {
     name: "day-deal",
     data() {
         return {
-            countDownDate: new Date("Nov 6, 2022 14:00:00").getTime(),
+            countDownDate: new Date("Nov 6, 2022 00:00:00").getTime(),
             countDown: {
                 countDays: 0,
                 countHours: 0,
@@ -273,5 +273,12 @@ export default {
     text-transform: capitalize;
     padding: 5px;
     text-decoration: none;
+}
+.slider-for {
+    cursor: pointer;
+    pointer-events: none;
+}
+.galivery {
+    max-height: 900px;
 }
 </style>

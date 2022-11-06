@@ -181,7 +181,7 @@
                                     <v-img
                                         src="images/data/3-item-a.jpg"
                                         class="w-100"
-                                        max-width="100%"
+                                        max-width="98%"
                                         max-height="345"
                                     ></v-img>
                                 </a>
@@ -209,7 +209,7 @@
                                     <v-img
                                         src="images/data/4-item-a.jpg"
                                         class="w-100"
-                                        max-width="100%"
+                                        max-width="98%"
                                         max-height="345"
                                     ></v-img>
                                 </a>
@@ -237,7 +237,7 @@
                                     <v-img
                                         src="images/data/2-item-a.jpg"
                                         class="w-100"
-                                        max-width="100%"
+                                        max-width="98%"
                                         max-height="345"
                                     ></v-img>
                                 </a>
@@ -360,6 +360,9 @@ h5 a {
 @media only screen and (max-width: 37.5em) {
     .banner .container.grid-list-xl .layout .d-flex {
         padding: 15px 0 !important;
+    }
+    .emb-feature__wrap .container .row {
+        flex-direction: column;
     }
 }
 </style>

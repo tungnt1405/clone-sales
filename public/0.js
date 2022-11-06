@@ -995,7 +995,7 @@ var render = function render() {
     staticClass: "w-100",
     attrs: {
       src: "images/data/3-item-a.jpg",
-      "max-width": "100%",
+      "max-width": "98%",
       "max-height": "345"
     }
   })], 1)])]), _vm._v(" "), _c("div", {
@@ -1023,7 +1023,7 @@ var render = function render() {
     staticClass: "w-100",
     attrs: {
       src: "images/data/4-item-a.jpg",
-      "max-width": "100%",
+      "max-width": "98%",
       "max-height": "345"
     }
   })], 1)])]), _vm._v(" "), _c("div", {
@@ -1051,7 +1051,7 @@ var render = function render() {
     staticClass: "w-100",
     attrs: {
       src: "images/data/2-item-a.jpg",
-      "max-width": "100%",
+      "max-width": "98%",
       "max-height": "345"
     }
   })], 1)])]), _vm._v(" "), _c("div", {
@@ -1115,7 +1115,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    margin-bottom: 0.5rem;\r\n    margin-top: 0;\n}\nh2,\r\nh2 a {\r\n    font-size: 2.813rem !important;\n}\nh5 {\r\n    line-height: 1.4;\n}\nh5,\r\nh5 a {\r\n    font-size: 1.25rem;\n}\n.container.grid-list-xl .layout:only-child,\r\n.container.grid-list-xl :not(:only-child) .layout:first-child {\r\n    margin: -15px;\n}\n.detailOffer {\r\n    padding: 0 0 12px 0;\n}\n.overlay-content {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    text-align: center;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.overlay-wrap,\r\n.overlay-content * {\r\n    color: #fff;\n}\n.primary-rgba h2,\r\n.primary-rgba h5,\r\n.primary-rgba h3 {\r\n    line-height: 1;\n}\n.primary-rgba h2 {\r\n    font-weight: 900;\r\n    font-size: 6rem !important;\r\n    font-style: italic;\n}\n.primary-rgba h3 {\r\n    font-weight: bold;\n}\n.primary-rgba h5 {\r\n    letter-spacing: 2px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\n}\n@media only screen and (max-width: 78.9375em) {\n.banner .container.grid-list-xl .layout .d-flex {\r\n        padding: 15px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex:first-child {\r\n        padding-left: 0px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex:last-child {\r\n        padding-right: 0px !important;\n}\n.emb-card:first-child,\r\n    .emb-card:last-child {\r\n        margin-left: 0px !important;\n}\n.detailOffer {\r\n        padding: 0 !important;\n}\n}\n@media only screen and (max-width: 37.5em) {\n.banner .container.grid-list-xl .layout .d-flex {\r\n        padding: 15px 0 !important;\n}\n}\r\n", ""]);
+exports.push([module.i, "\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    margin-bottom: 0.5rem;\r\n    margin-top: 0;\n}\nh2,\r\nh2 a {\r\n    font-size: 2.813rem !important;\n}\nh5 {\r\n    line-height: 1.4;\n}\nh5,\r\nh5 a {\r\n    font-size: 1.25rem;\n}\n.container.grid-list-xl .layout:only-child,\r\n.container.grid-list-xl :not(:only-child) .layout:first-child {\r\n    margin: -15px;\n}\n.detailOffer {\r\n    padding: 0 0 12px 0;\n}\n.overlay-content {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    text-align: center;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.overlay-wrap,\r\n.overlay-content * {\r\n    color: #fff;\n}\n.primary-rgba h2,\r\n.primary-rgba h5,\r\n.primary-rgba h3 {\r\n    line-height: 1;\n}\n.primary-rgba h2 {\r\n    font-weight: 900;\r\n    font-size: 6rem !important;\r\n    font-style: italic;\n}\n.primary-rgba h3 {\r\n    font-weight: bold;\n}\n.primary-rgba h5 {\r\n    letter-spacing: 2px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\n}\n@media only screen and (max-width: 78.9375em) {\n.banner .container.grid-list-xl .layout .d-flex {\r\n        padding: 15px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex:first-child {\r\n        padding-left: 0px !important;\n}\n.banner .container.grid-list-xl .layout .d-flex:last-child {\r\n        padding-right: 0px !important;\n}\n.emb-card:first-child,\r\n    .emb-card:last-child {\r\n        margin-left: 0px !important;\n}\n.detailOffer {\r\n        padding: 0 !important;\n}\n}\n@media only screen and (max-width: 37.5em) {\n.banner .container.grid-list-xl .layout .d-flex {\r\n        padding: 15px 0 !important;\n}\n.emb-feature__wrap .container .row {\r\n        flex-direction: column;\n}\n}\r\n", ""]);
 
 // exports
 

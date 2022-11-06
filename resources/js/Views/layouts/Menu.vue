@@ -250,6 +250,7 @@
                                         :src="logo"
                                         :lazy-src="logo"
                                         max-width="224"
+                                        max-height="100%"
                                         cover
                                     ></v-img
                                 ></router-link>

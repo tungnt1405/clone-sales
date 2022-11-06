@@ -181,7 +181,7 @@
                                     <v-img
                                         src="images/data/3-item-a.jpg"
                                         class="w-100"
-                                        max-width="98%"
+                                        max-width="100%"
                                         max-height="345"
                                     ></v-img>
                                 </a>
@@ -209,7 +209,7 @@
                                     <v-img
                                         src="images/data/4-item-a.jpg"
                                         class="w-100"
-                                        max-width="98%"
+                                        max-width="100%"
                                         max-height="345"
                                     ></v-img>
                                 </a>
@@ -237,7 +237,7 @@
                                     <v-img
                                         src="images/data/2-item-a.jpg"
                                         class="w-100"
-                                        max-width="98%"
+                                        max-width="100%"
                                         max-height="345"
                                     ></v-img>
                                 </a>

@@ -995,7 +995,7 @@ var render = function render() {
     staticClass: "w-100",
     attrs: {
       src: "images/data/3-item-a.jpg",
-      "max-width": "98%",
+      "max-width": "100%",
       "max-height": "345"
     }
   })], 1)])]), _vm._v(" "), _c("div", {
@@ -1023,7 +1023,7 @@ var render = function render() {
     staticClass: "w-100",
     attrs: {
       src: "images/data/4-item-a.jpg",
-      "max-width": "98%",
+      "max-width": "100%",
       "max-height": "345"
     }
   })], 1)])]), _vm._v(" "), _c("div", {
@@ -1051,7 +1051,7 @@ var render = function render() {
     staticClass: "w-100",
     attrs: {
       src: "images/data/2-item-a.jpg",
-      "max-width": "98%",
+      "max-width": "100%",
       "max-height": "345"
     }
   })], 1)])]), _vm._v(" "), _c("div", {

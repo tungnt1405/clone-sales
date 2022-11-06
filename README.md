@@ -10,3 +10,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - `@php artisan package:discover --ansi`
 - `@php artisan key:generate --ansi`
 - if 'cross-env' is not recognized, run `yarn add cross-env`
+
+##link demo
+https://clone-sales.herokuapp.com/

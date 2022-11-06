@@ -32,7 +32,7 @@ __webpack_require__.r(__webpack_exports__);
   name: "day-deal",
   data: function data() {
     return {
-      countDownDate: new Date("Nov 6, 2022 00:00:00").getTime(),
+      countDownDate: new Date("Nov 7, 2022 00:00:00").getTime(),
       countDown: {
         countDays: 0,
         countHours: 0,

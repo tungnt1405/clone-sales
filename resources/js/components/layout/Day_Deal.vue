@@ -163,7 +163,7 @@ export default {
     name: "day-deal",
     data() {
         return {
-            countDownDate: new Date("Nov 6, 2022 00:00:00").getTime(),
+            countDownDate: new Date("Nov 7, 2022 00:00:00").getTime(),
             countDown: {
                 countDays: 0,
                 countHours: 0,
